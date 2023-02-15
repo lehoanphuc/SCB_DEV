@@ -196,6 +196,7 @@ public partial class ibLogin : System.Web.UI.Page
                         Session["serviceID"] = "IB";
                         lblInfo.Text = Resources.labels.becauseoffirstlogin;
                         gotochangepass();
+                        SmartPortal.SEMS.OTP.SendMailFirstLogin(Session["userID"].ToString(), "EMAILOTP", ref IPCERRORCODE, ref IPCERRORDESC);
                         return;
 
                     }
@@ -234,6 +235,7 @@ public partial class ibLogin : System.Web.UI.Page
                     Session["PopupNotifyStatus"] = null;
 					
 					Session["accType"] = row["ContractType"].ToString();
+                    SmartPortal.SEMS.OTP.SendMailNormalLogin(Session["userID"].ToString(), "EMAILOTP", ref IPCERRORCODE, ref IPCERRORDESC);
                 }
                 //update time login
 
