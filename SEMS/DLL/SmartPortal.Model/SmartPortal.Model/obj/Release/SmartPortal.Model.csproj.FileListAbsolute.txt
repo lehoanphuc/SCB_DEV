@@ -1,0 +1,11 @@
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\SmartPortal.Model.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\SmartPortal.Model.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\SmartPortal.Model.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\BouncyCastle.Crypto.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\itextsharp.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Release\itextsharp.xml
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Release\SmartPortal.Model.csproj.AssemblyReference.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Release\SmartPortal.Model.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Release\SmartPortal.Model.csproj.CopyComplete
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Release\SmartPortal.Model.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Release\SmartPortal.Model.pdb

@@ -1,0 +1,13 @@
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll.config
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.pdb
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.dll
+D:\JITS\SCB\siamvn\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.pdb
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll.config
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.pdb
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.csproj.AssemblyReference.cache
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.csproj.CoreCompileInputs.cache
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.dll
+E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.pdb

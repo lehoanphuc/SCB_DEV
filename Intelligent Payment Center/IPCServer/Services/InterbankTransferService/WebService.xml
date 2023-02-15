@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterbankTransferService</name>
+    </assembly>
+    <members>
+        <member name="M:InterbankTransferService.Controllers.WSController.UpstreamCCT(InterbankTransferService.Models.UpstreamCCT)">
+            <summary>
+            Upstream CCT API
+            </summary>
+        </member>
+        <member name="M:InterbankTransferService.Controllers.WSController.UpstreamNotificationToReceive(InterbankTransferService.Models.UpstreamNotificationToReceive)">
+             <summary>
+            UpstreamNotificationToReceive
+             </summary>
+        </member>
+        <member name="M:InterbankTransferService.Controllers.WSController.UpstreamCCTFailValidation(InterbankTransferService.Models.UpstreamCCTFailValidation)">
+             <summary>
+            UpstreamCCTFailValidation
+             </summary>
+        </member>
+        <member name="M:InterbankTransferService.Controllers.WSController.UpstreamCCTSuccessValidation(InterbankTransferService.Models.UpstreamCCTSuccessValidation)">
+             <summary>
+            UpstreamCCTSuccessValidation
+             </summary>
+        </member>
+        <member name="T:InterbankTransferService.Providers.UpstreamCCTModelExample">
+             <summary>
+             
+             </summary>
+            
+        </member>
+        <member name="T:InterbankTransferService.Providers.UpstreamNotificationToReceiveModelExample">
+            <summary>
+            API2
+            UpstreamNotificationToReceive
+            </summary>
+        </member>
+        <member name="T:InterbankTransferService.Providers.UpstreamCCTFailValidationModelExample">
+            <summary>
+            API3
+            UpstreamCCTFailValidation
+            </summary>
+        </member>
+        <member name="T:InterbankTransferService.Providers.UpstreamCCTSuccessValidationModelExample">
+            <summary>
+            API4
+            UpstreamCCTSuccessValidation
+            </summary>
+        </member>
+    </members>
+</doc>

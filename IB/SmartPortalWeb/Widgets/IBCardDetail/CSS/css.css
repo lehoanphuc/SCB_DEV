@@ -1,0 +1,15 @@
+table thead tr th {
+    color: #fff;
+    text-align:center;
+}
+
+td,th {
+    font-size: 12px;
+}
+
+.al {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

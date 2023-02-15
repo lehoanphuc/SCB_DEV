@@ -1,0 +1,11 @@
+﻿.logininfo
+{
+	font-weight:bold;
+	color:Red;
+}
+.tdleft
+{
+	text-align:right;
+	padding-right:5px;	
+	background-color:#DFF1FF;
+}

@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <dtTranDetail Ref="2" type="DataTableSource" isKey="true">
+        <Alias>dtTranDetail</Alias>
+        <Columns isList="true" count="24">
+          <value>TRANTYPE,System.String</value>
+          <value>STATUS,System.String</value>
+          <value>TRANREF,System.String</value>
+          <value>TRANDATE,System.String</value>
+          <value>TRANTIME,System.String</value>
+          <value>SENDER,System.String</value>
+          <value>RECEIVER,System.String</value>
+          <value>F20,System.String</value>
+          <value>F32ACCY,System.String</value>
+          <value>F32AAMOUNT,System.String</value>
+          <value>F33BCCY,System.String</value>
+          <value>F33BAMOUNT,System.String</value>
+          <value>F50KACT,System.String</value>
+          <value>F50KNAME,System.String</value>
+          <value>F57A,System.String</value>
+          <value>F59ACT,System.String</value>
+          <value>F59NAME,System.String</value>
+          <value>F70,System.String</value>
+          <value>F71A,System.String</value>
+          <value>F71GCCY,System.String</value>
+          <value>F71GAMOUNT,System.String</value>
+          <value>F32ADATE,System.String</value>
+          <value>F71FCCY,System.String</value>
+          <value>F71FAMOUNT,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>dtTranDetail</Name>
+        <NameInSource />
+      </dtTranDetail>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="53">
+        <Text1 Ref="4" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,2,13.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,12,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Confirmation for Remittance Transaction via ....(Ripple)………</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Text4 Ref="5" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,3,3.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text4</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction Type : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text4>
+        <Text2 Ref="6" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>10.6,3,4.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.STATUS}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text2>
+        <Text5 Ref="7" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.2,3,1.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text5</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Status : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text5>
+        <Text6 Ref="8" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.4,3.8,4.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text6</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.TRANREF}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text6>
+        <Text7 Ref="9" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,3.8,3.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text7</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Systen Reference : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text7>
+        <Text8 Ref="10" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>12.2,3.8,2.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text8</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.TRANDATE}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text8>
+        <Text9 Ref="11" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>9.2,3.8,3,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text9</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Transaction Date : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text9>
+        <Text10 Ref="12" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>15.8,3.8,2.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text10</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.TRANTIME}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text10>
+        <Text11 Ref="13" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,3.8,1,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text11</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Time :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text11>
+        <Text12 Ref="14" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,4.6,16,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text12</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>------------------------------------------------------------- Message Header ---------------------------------------------------------------</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text12>
+        <Text13 Ref="15" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.2,5.2,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text13</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.SENDER}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text13>
+        <Text14 Ref="16" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,5.2,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text14</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Sender :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text14>
+        <Text15 Ref="17" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.2,6,8.2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text15</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.RECEIVER}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text15>
+        <Text16 Ref="18" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,6,2,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text16</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Receiver : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text16>
+        <Text17 Ref="19" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,6.8,16,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>def769c02b4648f999f2c380aeb530ed</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text17</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>--------------------------------------------------------------- Message Text ------------------------------------------------------------------</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text17>
+        <Text18 Ref="20" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,7.8,5.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>edc3908a74d844e98bd772b4e7bec22c</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text18</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F20 : Sender's Reference</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text18>
+        <Text19 Ref="21" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,8.4,4.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text19</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F20}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text19>
+        <Text20 Ref="22" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,9.2,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>88529d7b7e104976ae907b641e24d928</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text20</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F32A : Value Date/Currency/Interbank Settled Amount</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text20>
+        <Text21 Ref="23" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3,9.8,8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text21</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F32ADATE}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text21>
+        <Text22 Ref="24" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,9.8,1,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text22</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Date : </Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text22>
+        <Text23 Ref="25" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,10.4,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text23</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F32ACCY}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text23>
+        <Text24 Ref="26" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,10.4,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text24</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Currency :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text24>
+        <Text25 Ref="27" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.4,11,7.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text25</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F32AAMOUNT}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text25>
+        <Text26 Ref="28" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,11,1.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text26</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Amount :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text26>
+        <Text27 Ref="29" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,12.4,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text27</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F33BCCY}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text27>
+        <Text28 Ref="30" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,12.4,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text28</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Currency :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text28>
+        <Text29 Ref="31" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,11.8,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>9613a35a732745c18ab0551bc0d9abc0</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text29</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F33B : Currency/Instructed Amount</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text29>
+        <Text30 Ref="32" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,13,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text30</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F33BAMOUNT}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+          <TextFormat Ref="33" type="NumberFormat" isKey="true">
+            <DecimalSeparator>,</DecimalSeparator>
+            <GroupSeparator>.</GroupSeparator>
+            <NegativePattern>1</NegativePattern>
+          </TextFormat>
+        </Text30>
+        <Text31 Ref="34" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,13,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text31</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Amount :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text31>
+        <Text32 Ref="35" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,13.8,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>4a92702c19ca461ca8ed7545531cf1c0</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text32</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F50K: Ordering Customer - Account - Name and Address</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text32>
+        <Text33 Ref="36" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,14.4,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text33</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F50KACT}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text33>
+        <Text34 Ref="37" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,14.4,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text34</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Account :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text34>
+        <Text35 Ref="38" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.4,15,9.4,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text35</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F50KNAME}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text35>
+        <Text36 Ref="39" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,15,3.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text36</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Name and Address :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text36>
+        <Text37 Ref="40" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,16.8,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>cdc9567fef194d7b80a2fdf03a18f0bc</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text37</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F57A: Account With Institution - Party Identifier - Identifier Code</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text37>
+        <Text38 Ref="41" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,17.4,5,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text38</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F57A}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text38>
+        <Text39 Ref="42" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,18.2,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>45b344efda2b4901b42596e3b2600eaf</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text39</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F59: Beneficiary Customer - Account - Name and Address</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text39>
+        <Text40 Ref="43" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,18.8,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text40</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F59ACT}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text40>
+        <Text41 Ref="44" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,18.8,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text41</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Account :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text41>
+        <Text42 Ref="45" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>5.4,19.4,9.4,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text42</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F59NAME}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text42>
+        <Text43 Ref="46" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2,19.4,3.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text43</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>Name and Address :</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text43>
+        <Text44 Ref="47" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,21.2,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>f577481f13c248759fd104fab8ed8fe8</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text44</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F70: Remittance Information</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text44>
+        <Text45 Ref="48" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.2,21.8,12.6,1.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text45</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F70}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text45>
+        <Text46 Ref="49" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,23.6,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>f5cff61f22584f3a991594abc36ea836</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text46</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>F71A: Details of Charges</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text46>
+        <Text47 Ref="50" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.2,24.2,9,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text47</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.F71A}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text47>
+        <Text48 Ref="51" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>1.2,25,9.8,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Guid>0d1fdbb8041a4771ae89b32555018489</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text48</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{IIF(dtTranDetail.F71A=="","",IIF(dtTranDetail.F71A=="OUR","F71G: Receiver's Charges","F71F: Sender's Charges"))}
+
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text48>
+        <Text49 Ref="52" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.8,25.6,7.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text49</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{IIF(dtTranDetail.F71A=="","",IIF(dtTranDetail.F71A=="OUR",dtTranDetail.F71GCCY,dtTranDetail.F71FCCY))}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+          <Type>Expression</Type>
+        </Text49>
+        <Text50 Ref="53" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.2,25.6,1.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text50</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{IIF(dtTranDetail.F71A=="","","Currency :")}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text50>
+        <Text51 Ref="54" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>3.6,26.2,7.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text51</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{IIF(dtTranDetail.F71A=="","",IIF(dtTranDetail.F71A=="OUR",dtTranDetail.F71GAMOUNT,dtTranDetail.F71FAMOUNT))}
+</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+          <Type>Expression</Type>
+        </Text51>
+        <Text52 Ref="55" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>2.2,26.2,1.4,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,9</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text52</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{IIF(dtTranDetail.F71A=="","","Amount :")}
+</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text52>
+        <Image1 Ref="56" type="Image" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>14.8,0.4,2.6,3.2</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Image>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</Image>
+          <Margins>0,0,0,0</Margins>
+          <Name>Image1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Image1>
+        <Text3 Ref="57" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>4.4,3,4.2,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Arial,10,Bold</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{dtTranDetail.TRANTYPE}</Text>
+          <TextBrush>[0:112:192]</TextBrush>
+        </Text3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>7be8cf387a0740bbb1967c175f2f0f64</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="58" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PreviewSettings>268435455</PreviewSettings>
+  <PrinterSettings Ref="59" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>1/21/2019 9:57:17 PM</ReportChanged>
+  <ReportCreated>11/22/2018 4:08:19 PM</ReportCreated>
+  <ReportFile>D:\Working\Projects\KRCProject\BLS_Management\SmartPortalWebKRC\Widgets\Invoice\Template\PaymentConfirmLetter.mrt</ReportFile>
+  <ReportGuid>43c510b25bf940349828d7d23f45e3ba</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2016.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

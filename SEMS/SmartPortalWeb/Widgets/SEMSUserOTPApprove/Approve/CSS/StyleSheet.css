@@ -1,0 +1,28 @@
+﻿#gvPages
+{
+	width:100%;
+}
+.pager
+{
+	background-color:#BCDFFB;		
+}
+.pager a
+{    	
+	/*background-color:#F8F8F8;*/
+	padding:3px 5px 3px 5px;
+	text-decoration:none;
+	margin-left:4px;
+}
+
+.pager a:hover
+{    	
+	background-color:#EAFAFF;color:#003366; 
+	border:solid 1px gray;	 	
+}
+.pager span
+{
+	background-color:#EAFAFF;color:#003366;
+	padding:3px 5px 3px 5px;
+	border:solid 1px gray;
+	color:Black;
+}

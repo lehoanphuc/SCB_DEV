@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterbankTransferService</name>
+    </assembly>
+    <members>
+        <member name="M:LAPNETAPI.Controllers.WSController.HelloAPI">
+            <summary>
+            Get Session
+            </summary>
+            
+        </member>
+        <member name="T:LAPNETAPI.Providers.UpstreamCCTModelExample">
+             <summary>
+             
+             </summary>
+            
+        </member>
+        <member name="T:LAPNETAPI.Providers.UpstreamNotificationToReceiveModelExample">
+            <summary>
+            API2
+            UpstreamNotificationToReceive
+            </summary>
+        </member>
+        <member name="T:LAPNETAPI.Providers.UpstreamCCTFailValidationModelExample">
+            <summary>
+            API3
+            UpstreamCCTFailValidation
+            </summary>
+        </member>
+        <member name="T:LAPNETAPI.Providers.UpstreamCCTSuccessValidationModelExample">
+            <summary>
+            API4
+            UpstreamCCTSuccessValidation
+            </summary>
+        </member>
+    </members>
+</doc>

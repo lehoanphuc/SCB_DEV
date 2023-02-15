@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterbankTransferService</name>
+    </assembly>
+    <members>
+        <member name="M:DownloadImageAPI.Controllers.WSController.GetFileDocument(System.String)">
+            <summary>
+            Get Session
+            </summary>
+        </member>
+        <member name="T:DownloadImageAPI.Providers.UpstreamCCTModelExample">
+             <summary>
+             
+             </summary>
+            
+        </member>
+        <member name="T:DownloadImageAPI.Providers.UpstreamNotificationToReceiveModelExample">
+            <summary>
+            API2
+            UpstreamNotificationToReceive
+            </summary>
+        </member>
+        <member name="T:DownloadImageAPI.Providers.UpstreamCCTFailValidationModelExample">
+            <summary>
+            API3
+            UpstreamCCTFailValidation
+            </summary>
+        </member>
+        <member name="T:DownloadImageAPI.Providers.UpstreamCCTSuccessValidationModelExample">
+            <summary>
+            API4
+            UpstreamCCTSuccessValidation
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,22 @@
+﻿.bankNewsTitle
+{
+	color:#C54C5D;
+	font-size:10pt;
+	text-decoration:none;
+	font-weight:bold;	
+}
+.dlBankNews
+{
+	line-height:20px;
+	text-decoration:none;	
+	font-size:9pt;
+}
+.linebanknews
+{
+	height:0.5pt;		
+	background-color:#C54C5D;
+}
+.bnSummary
+{
+	font-size:9pt;	
+}

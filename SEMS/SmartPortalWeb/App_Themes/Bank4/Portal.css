@@ -1,0 +1,140 @@
+.portal-column
+{
+	width: 100%;
+	min-height: 5px;
+	margin: 0px;
+	padding: 0px;
+}
+.portal-column h2
+{
+	color: #bbb;
+	text-align: center;
+	width: 100%;
+}
+
+#portal-column-block-list .block .content
+{
+	display: none;
+}
+.block
+{
+	padding: 0px; /*border: 1px solid #0F3974;*/
+	border: solid 1px #65101C;
+	background-color: #ffffff;
+	width: 99%;
+	margin: 5px auto 0 auto;
+}
+.block div.handle
+{
+	cursor: move;
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	margin-top: 5px;
+	padding-top: 0px;
+	padding-bottom: 2px;
+	padding-right: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	background-image: url(images/bgTitle.png);
+	background-repeat: repeat-x;
+	margin-bottom: 0px;
+}
+
+.block div.content
+{
+	width: 100%;
+	margin-top: 0px; /*background-image:url(images/l_menu_content.gif);*/
+}
+.block .block-toggle
+{
+	background-image: url(block-slide.png);
+	display: block;
+	float: right;
+	width: 7px;
+	height: 7px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+.block .block-toggle span
+{
+	display: none;
+}
+
+.block-hover
+{
+	border: 1px dashed #f00;
+}
+
+.block-list-handle, #portal .handle
+{
+	cursor: move;
+}
+
+#portal-column-block-list .block .block-toggle
+{
+	display: none;
+}
+
+.block1
+{
+	/*border: 1px solid #0F3974;*/
+	border-style: none solid solid solid;
+	border-width: 1px;
+	border-color: #69A5D0;
+	padding: 0px;
+	background-color: #ffffff;
+	width: 99%;
+	margin: 5px auto 0 auto;
+}
+.block1 div.handle
+{
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	text-indent: 5px;
+	margin: 0;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #DF4E6F;
+	background-image: url(images/bgTitle.png);
+	background-repeat: repeat-x;
+}
+
+.block1 div.content
+{
+	width: 100%;
+	margin-top: 0px;
+	padding: 0px 5px auto 5px; /*background-image:url(images/l_menu_content.gif);*/
+}
+
+.imgWidget
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 3px;
+	width: 10px;
+	height: 9px;
+}
+.btnGeneral
+{
+	background-image: url(images/button.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #C3C3C3;
+	padding: 3px 7px 4px;
+	-moz-border-radius: 2px 2px 2px 2px;
+}
+.btnGeneral:hover
+{
+	background-image: url(images/button.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #888888;
+	padding: 3px 7px 4px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-moz-box-shadow: 0 0 3px #999999;
+}

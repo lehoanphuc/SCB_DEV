@@ -1,0 +1,145 @@
+
+/*=======================================================================*/
+
+.aheader {
+    color: #fff;
+    height: 23px;
+    display:flex;
+}
+
+.arrowlistmenu .menuheader { /*CSS class for menu headers in general (expanding or not!)*/
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.arrowlistmenu .menuheader {
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-weight: 600;
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 5px 0;
+    line-height: 14px;
+    border-bottom: 1px solid #dadada;
+    background-color: #DCDDDE;
+}
+
+    .arrowlistmenu .menuheader li {
+        display: block;
+        list-style: none;
+        height: 24px;
+        background-color: #FFF;
+        padding-top: 1px;
+        margin: 0 auto;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .arrowlistmenu .menuheader a {
+        text-decoration: none;
+        color: #2F2F20;
+        display: block;
+        padding: 5px 0 5px 10px;
+    }
+
+        .arrowlistmenu .menuheader a:hover {
+            /*background-color: #d5d5d2;
+            background-image: url(images/submenu_icon_active.gif);
+            background-repeat: no-repeat;*/
+        }
+
+
+
+.other {
+    float: left;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.arrowlistmenu .other .menuheader_inside {
+    height: 24px;
+    background-color: #FFF;
+    padding-top: 1px;
+    margin: 0 auto;
+    width: 211px;
+    float: left;
+}
+
+    .arrowlistmenu .other .menuheader_inside a {
+        text-decoration: none;
+        color: #2F2F20;
+        background-color: #E7E6DA;
+        width: 211px;
+        height: 20px;
+        display: block;
+        background-image: url(images/submenu_icon.gif);
+        background-repeat: no-repeat;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 11px;
+    }
+
+        .arrowlistmenu .other .menuheader_inside a:hover {
+            background-color: #d5d5d2;
+            background-image: url(images/submenu_icon_active.gif);
+            background-repeat: no-repeat;
+        }
+
+
+.arrowlistmenu .openheader { /*CSS class to apply to expandable header when it's expanded*/
+    background-image: url(images/arrow-down.png);
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.arrowlistmenu ul { /*CSS for UL of each sub menu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+/*    margin-bottom: 8px;*/
+}
+
+    .arrowlistmenu ul li {
+        /*padding-bottom: 2px;*/
+    }
+
+        .arrowlistmenu ul li .opensubheader { /*Open state CSS for sub menu header*/
+            background: lightblue !important;
+        }
+
+        .arrowlistmenu ul li .closedsubheader { /*Closed state CSS for sub menu header*/
+            background: lightgreen !important;
+        }
+
+        .arrowlistmenu ul li a {
+            color: #1e4f92;
+            display: block;
+            padding: 5px 0;
+            padding-left: 25px;
+            text-decoration: none;
+            text-align: left;
+            border-bottom: 1px solid #dadada;
+            font-size: 13px;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 22px;
+        }
+
+            /*.arrowlistmenu ul li a:visited {
+                color: #1e4f92;
+            }*/
+
+            .arrowlistmenu ul li a:hover {
+            }
+
+            .arrowlistmenu ul li a.subexpandable:hover { /*hover state CSS for sub menu header*/
+                /*background: lightblue;*/
+                height: 24px;
+            }
+
+.crazy {
+    height: 24px;
+    padding-left: 15px;
+    padding-top: 5px;
+}

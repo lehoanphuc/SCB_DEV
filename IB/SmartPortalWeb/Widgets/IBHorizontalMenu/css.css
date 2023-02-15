@@ -1,0 +1,323 @@
+
+/*=======================================================================*/
+
+.logo img {
+    max-width: 250px;
+    margin-right: 100px;
+}
+
+.arrowlistmenu .menuheader { /*CSS class for menu headers in general (expanding or not!)*/
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+}
+
+    .arrowlistmenu .menuheader:hover {
+        color: #12612f;
+    }
+
+    .arrowlistmenu .menuheader.expandable {
+        background: url(images/arrow-right.png) center right;
+        background-color: #DCDDDE;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        padding: 5px 10px;
+        line-height: 24px;
+    }
+
+        .arrowlistmenu .menuheader.expandable:hover {
+            background: url(images/arrow-down.png) center right;
+            background-size: 26px;
+            background-repeat: no-repeat;
+            color: #fff;
+            background-color: #009783 !important;
+        }
+
+.nav-logo{
+    width:25%;
+    padding:10px;
+}
+
+    .nav-logo a img {
+        width:100%;
+        height:100%;
+    }
+
+    .arrowlistmenu .menuheader {
+        text-align: left;
+        cursor: pointer;
+        margin-bottom: 1px;
+        font-weight: 600;
+        font-family: 'Roboto', Arial, sans-serif;
+        padding: 5px 0;
+        line-height: 14px;
+        border-bottom: 1px solid #dadada;
+    }
+
+    .arrowlistmenu .menuheader li {
+        display: block;
+        list-style: none;
+        height: 24px;
+        background-color: #FFF;
+        padding-top: 1px;
+        margin: 0 auto;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+
+    .arrowlistmenu .menuheader a {
+        text-decoration: none;
+        color: #2F2F20;
+        display: block;
+        padding: 5px 0 5px 10px;
+    }
+
+        .arrowlistmenu .menuheader a:hover {
+            /*background-color: #d5d5d2;
+            background-image: url(images/submenu_icon_active.gif);
+            background-repeat: no-repeat;*/
+        }
+
+
+
+.other {
+    float: left;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.arrowlistmenu .other .menuheader_inside {
+    height: 24px;
+    background-color: #FFF;
+    padding-top: 1px;
+    margin: 0 auto;
+    width: 211px;
+    float: left;
+}
+
+    .arrowlistmenu .other .menuheader_inside a {
+        text-decoration: none;
+        color: #2F2F20;
+        background-color: #E7E6DA;
+        width: 211px;
+        height: 20px;
+        display: block;
+        background-image: url(images/submenu_icon.gif);
+        background-repeat: no-repeat;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-size: 11px;
+    }
+
+        .arrowlistmenu .other .menuheader_inside a:hover {
+            background-color: #d5d5d2;
+            background-image: url(images/submenu_icon_active.gif);
+            background-repeat: no-repeat;
+        }
+
+
+.arrowlistmenu .openheader { /*CSS class to apply to expandable header when it's expanded*/
+    background-image: url(images/arrow-down.png);
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.arrowlistmenu ul { /*CSS for UL of each sub menu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+    .arrowlistmenu ul li {
+        /*padding-bottom: 2px;*/
+    }
+
+        .arrowlistmenu ul li .opensubheader { /*Open state CSS for sub menu header*/
+            background: lightblue !important;
+        }
+
+        .arrowlistmenu ul li .closedsubheader { /*Closed state CSS for sub menu header*/
+            background: lightgreen !important;
+        }
+
+        .arrowlistmenu ul li a {
+            color: #009783 !important;
+            display: block;
+            padding: 5px 0;
+            padding-left: 25px;
+            text-decoration: none;
+            text-align: left;
+            border-bottom: 1px solid #dadada;
+            font-size: 13px;
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 22px;
+        }
+
+            .arrowlistmenu ul li a:visited {
+                color: #009783 !important;
+            }
+
+            .arrowlistmenu ul li a:hover {
+            }
+
+            .arrowlistmenu ul li a.subexpandable:hover { /*hover state CSS for sub menu header*/
+                /*background: lightblue;*/
+                height: 24px;
+            }
+
+.crazy {
+    height: 24px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+
+@media (max-width: 979px) {
+    .divroot {
+        display: none !important;
+    }
+}
+
+#divLang {
+    padding-top: 7px;
+    float: right;
+    width: 22%;
+}
+
+#divLang a {
+    padding: 5px;
+}
+
+.menu_button {
+    height: 33px;
+    float: right;
+    margin-top: 3px;
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    background-color: #007F3E;
+}
+
+.pnMenu {
+    margin: 0 auto;
+    background-color: #7A58BF !important;
+}
+
+.nav-menu {
+    width: 75%;
+    padding-top: 60px;
+}
+
+.menu_button li {
+    height: 33px;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007F3E;
+    width: 138.8px;
+    border-right: 1px solid #999;
+}
+
+    .menu_button :last-child {
+        border-right: 0px;
+    }
+
+#changepass {
+    height: 33px;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    background-color: #007F3E;
+    width: 197px;
+}
+
+.menu_button li:hover {
+    /*background-color: #12612f !important;*/
+}
+
+    .menu_button li a {
+        height: 33px;
+        display: block;
+        padding: 0 15px;
+        padding-top: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+        .menu_button li a:hover {
+            height: 33px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+#textfield {
+    width: 200px;
+    height: 15px;
+    font: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    float: right;
+    margin: 42px 70px 0 0;
+}
+
+
+.IBmenu {
+    height: 115px;
+    width: 100%;
+    /*background: url(images/border-menu.png) no-repeat top;*/
+    background-size: 100% 2px;
+    /*background: linear-gradient(to left, rgb(111, 95, 94), rgba(10,10,10,0));*/
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.divroot {
+    display: block;
+    position: relative;
+}
+
+.left-wrap {
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 0;
+}
+
+    .left-wrap .left-wrap-inner {
+        display: block;
+        padding: 0 400px 0 0;
+    }
+
+        .left-wrap .left-wrap-inner .left-div {
+            display: block;
+            height: 33px;
+            background: #81caf9;
+        }
+
+.right-wrap {
+    display: block;
+    float: right;
+    width: 50%;
+    padding: 0;
+}
+
+    .right-wrap .right-wrap-inner {
+        display: block;
+        padding: 0 0 0 400px;
+    }
+
+        .right-wrap .right-wrap-inner .right-div {
+            display: block;
+            height: 33px;
+            background: #5bbef9;
+        }

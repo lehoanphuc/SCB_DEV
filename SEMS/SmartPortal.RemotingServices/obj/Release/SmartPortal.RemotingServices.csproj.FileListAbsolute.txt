@@ -1,0 +1,12 @@
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\SmartPortal.RemotingServices.dll.config
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\SmartPortal.RemotingServices.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\SmartPortal.RemotingServices.pdb
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\BouncyCastle.Crypto.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\itextsharp.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\ITransaction.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\bin\Release\itextsharp.xml
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\obj\Release\SmartPortal.RemotingServices.csproj.AssemblyReference.cache
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\obj\Release\SmartPortal.RemotingServices.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\obj\Release\SmartPortal.RemotingServices.csproj.CopyComplete
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\obj\Release\SmartPortal.RemotingServices.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.RemotingServices\obj\Release\SmartPortal.RemotingServices.pdb

@@ -1,0 +1,11 @@
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\SmartPortal.Exception.dll.config
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\SmartPortal.Exception.pdb
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\BouncyCastle.Crypto.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\itextsharp.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\bin\Release\itextsharp.xml
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\obj\Release\SmartPortal.ExceptionCollection.csproj.AssemblyReference.cache
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\obj\Release\SmartPortal.ExceptionCollection.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\obj\Release\SmartPortal.ExceptionCollection.csproj.CopyComplete
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\obj\Release\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\SEMS\SmartPortal.Exception\obj\Release\SmartPortal.Exception.pdb

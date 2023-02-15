@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBE03DDA-467A-46FF-BC65-AFB37BDB7C59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartPortal.SEMS</RootNamespace>
+    <AssemblyName>SmartPortal.SEMS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 1|AnyCPU'">
+    <OutputPath>bin\Release 1\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 1|x86'">
+    <OutputPath>bin\x86\Release 1\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ITransaction, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b2cb8c0001b382b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SmartPortalWeb\Dll\ITransaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalStructure.cs" />
+    <Compile Include="ApprovalWorkflow.cs" />
+    <Compile Include="ATM.cs" />
+    <Compile Include="Bank.cs" />
+    <Compile Include="BankUser.cs" />
+    <Compile Include="Biller.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CardLessWithdrawal.cs" />
+    <Compile Include="CBMNet.cs" />
+    <Compile Include="City.cs" />
+    <Compile Include="ContractModel.cs" />
+    <Compile Include="EBASYSVAR.cs" />
+    <Compile Include="FastBank.cs" />
+    <Compile Include="FDProductOnline.cs" />
+    <Compile Include="FxTransactionLimit.cs" />
+    <Compile Include="Nation.cs" />
+    <Compile Include="Fee.cs" />
+    <Compile Include="Contract.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Dept.cs" />
+    <Compile Include="District.cs" />
+    <Compile Include="ExchangeRate.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="O9Encryptpass.cs" />
+    <Compile Include="OTP.cs" />
+    <Compile Include="PartnerBank.cs" />
+    <Compile Include="Poster.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionFee.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportRight.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="TextFieldParser.cs" />
+    <Compile Include="Topup.cs" />
+    <Compile Include="Transactions.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserAcountInfo.cs" />
+    <Compile Include="UserApprovalLimit.cs" />
+    <Compile Include="UserLimit.cs" />
+    <Compile Include="USERPOLICY.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLL\SmartPortal.DAL\SmartPortal.DAL.csproj">
+      <Project>{47948D00-DCDD-4E37-A806-6C8C8C8AAB95}</Project>
+      <Name>SmartPortal.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\SmartPortal.Model\SmartPortal.Model\SmartPortal.Model.csproj">
+      <Project>{db2a1fc9-eca0-43fa-b512-7e33dd52c57d}</Project>
+      <Name>SmartPortal.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.Constant\SmartPortal.Constant.csproj">
+      <Project>{509FB54C-271E-4413-82D5-E2289944B4E4}</Project>
+      <Name>SmartPortal.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.IB\SmartPortal.IB.csproj">
+      <Project>{3FFF9CCF-EC40-4E0B-A3A7-5CADE986E247}</Project>
+      <Name>SmartPortal.IB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.RemotingServices\SmartPortal.RemotingServices.csproj">
+      <Project>{440C3487-12AF-45B1-B1BF-191A0BC56690}</Project>
+      <Name>SmartPortal.RemotingServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

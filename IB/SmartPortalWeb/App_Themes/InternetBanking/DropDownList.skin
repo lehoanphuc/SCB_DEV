@@ -1,0 +1,10 @@
+﻿<asp:DropDownList Height="30px"  runat="server" style="border-color: #ced4da;max-width: 350px;" CssClass="select2" Width="100%"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="fullDDL" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL" Width="200px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL1" Width="290px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL2" Width="350px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL3" Width="70px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL4" Width="50px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL5" Width="100px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL6" Width="240px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>
+<asp:DropDownList Height="30px" SkinId="extDDL7" Width="300px" runat="server" style="border-color: ced4da;"> </asp:DropDownList>

@@ -1,0 +1,13 @@
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll.config
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.pdb
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\IB\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.pdb
+E:\SCB\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll.config
+E:\SCB\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll
+E:\SCB\IB\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.pdb
+E:\SCB\IB\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.AssemblyReference.cache
+E:\SCB\IB\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.CoreCompileInputs.cache
+E:\SCB\IB\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.dll
+E:\SCB\IB\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.pdb

@@ -1,0 +1,84 @@
+﻿#divNOC
+{
+	margin-top:20px;
+}
+.tblNOC
+{
+	width:100%;
+	margin-top:0px;	
+}
+.nocTitle
+{
+	font-size:10pt;
+	
+}
+.nocDateCreated
+{
+	font-size:8pt;
+	font-style:italic;
+	color:Gray;
+}
+.nocTDSummary
+{
+	padding-left:25px;
+}
+.pager
+{
+	line-height:20px;
+	
+}
+.pager a
+{    	
+	background-color:#F8F8F8;
+	padding:1px 3px 1px 3px;
+	text-decoration:none;
+	margin-left:4px;
+}
+
+.pager a:hover
+{    	
+	background-color:maroon;    	
+}
+.pager span
+{
+	background-color:maroon;
+	padding:1px 3px 1px 3px;
+	border:solid 1px gray;
+	color:White;
+}
+ .style1
+    {
+        width: 100%;
+        margin-top:10px;
+      
+        /*background-image:url(../images/banner_bg.gif);
+		background-repeat:repeat-x;*/
+    }
+    
+.ndTitle
+{
+	font-size:10.5pt;
+	font-weight:bold;
+	padding-left:10px;
+}
+.ndTDContent
+{	
+	padding-left:10px;
+	padding-top:7px;
+}
+.ndDate
+{
+	
+	font-style:italic;
+}
+.ndTDDate
+{
+	font-size:8pt;
+	color:Gray;
+}
+.ndTDExtend
+{
+	text-align:right;
+	padding-top:5px;
+	padding-right:5px;
+}

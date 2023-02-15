@@ -1,0 +1,290 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+
+
+.content_header {
+    background: linear-gradient( #9ccee1,#2e94ba);
+}
+
+
+.login_right_menu_icon {
+    height: 20px;
+    width: 20px;
+    float: left;
+    background-image: url(../images/left_menu_icon.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.title-page h3 {
+    padding: 7px;
+    display: block;
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+    font-size:12px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+    .login_panel .title {
+        margin: 30px 0 20px 0;
+        height: 20px;
+        width: 250px;
+        font-weight: bold;
+        font-size: 18px;
+        float: left;
+    }
+
+        .login_panel .title li {
+            float: left;
+            display: block;
+            height: 20px;
+            width: 250px;
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+            list-style: none;
+        }
+
+    .login_panel .under {
+        text-align: left;
+        float: left;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .login_panel .username {
+        margin: 0px 0 0 0px;
+        width: 200px;
+        height: 15px;
+        float: left;
+        padding-left: 35px;
+    }
+
+        .login_panel .username li {
+            bottom: display:block;
+            color: #FFF;
+            float: left;
+        }
+
+    .login_panel .l_textbox {
+        height: 25px;
+        width: 200px;
+        float: left;
+        margin: 0 0 2px 0px;
+        padding-left: 35px;
+    }
+
+
+.textfield {
+    background-color: #F00;
+    width: 200px;
+}
+
+.forgot {
+    height: 15px;
+    width: 200px;
+    float: left;
+    margin: 2px 0 0 35px;
+    text-align: left;
+    font-size: 11px;
+}
+
+    .forgot a {
+        width: 100px;
+        display: block;
+        text-decoration: none;
+        color: #FFF;
+        font-style: italic;
+    }
+
+        .forgot a:hover {
+            text-decoration: underline;
+        }
+
+.login_panel .textbox li {
+    height: 20px;
+    width: 200px;
+    display: block;
+}
+
+.login_text {
+    margin: 30px 0 0 0px;
+    width: 637px;
+    float: left;
+    padding-left: 20px;
+}
+
+    .login_text .header {
+        width: 630px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+        .login_text .header li {
+            width: 630px;
+            height: 30px;
+            display: block;
+            font-weight: bold;
+            font-size: 17px;
+            float: left;
+            color: #128bb8;
+            margin: 0 auto;
+        }
+
+    .login_text .content {
+        width: 630px;
+    }
+
+        .login_text .content li {
+            width: 630px;
+            display: block;
+            font-size: 12px;
+            float: left;
+            margin: 0 0 10px 0px;
+            padding-left: 10px;
+        }
+
+.login_image {
+    margin: 0 0 5px 20px;
+    width: 930px;
+    /*height: 157px;*/
+    height: 45px;
+    /*background-color:#0e6c90;*/
+    float: left;
+    padding-left: 2px;
+}
+
+    .login_image li {
+        margin: 2px 2px 2px 0px;
+        width: 306px;
+        height: 153px;
+        float: left;
+    }
+
+.img_1 {
+    background-image: url(../images/1.gif);
+    background-repeat: no-repeat;
+    margin: 2px 2px 2px 0px;
+    width: 306px;
+    height: 153px;
+    float: left;
+}
+
+.img_2 {
+    background-image: url(../images/2.gif);
+    background-repeat: no-repeat;
+    margin: 2px 2px 2px 0px;
+    width: 306px;
+    height: 153px;
+    float: left;
+}
+
+.img_3 {
+    background-image: url(../images/3.gif);
+    background-repeat: no-repeat;
+    margin: 2px 2px 2px 0px;
+    width: 311px;
+    height: 153px;
+    float: left;
+}
+
+.textbox_1 {
+    border: 1px #1265aa solid;
+    background-color: #FCFEFE;
+    padding-left: 3px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    height: 16px;
+    padding-top: 3px;
+    color: #039;
+    width: 180px;
+    float: left;
+}
+
+.textbox_2 {
+    border: 1px #1265aa solid;
+    background-color: #FCFEFE;
+    padding-left: 3px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    height: 16px;
+    padding-top: 3px;
+    color: #039;
+    width: 60px;
+    float: left;
+}
+
+.textbox_3 {
+    border: 1px #1265aa solid;
+    background-color: #FCFEFE;
+    padding-left: 3px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    height: 16px;
+    padding-top: 3px;
+    color: #039;
+    width: 113px;
+    float: left;
+}
+
+.login_panel .l_textbox2 {
+    height: 25px;
+    width: 200px;
+    float: left;
+    margin-top: 12px;
+}
+
+.l_button {
+    width: 104px;
+    height: 30px;
+    /*	background-color:#117bd3; */
+    background-image: url(../images/btn_08.gif);
+    background-repeat: repeat-x;
+    color: #FFF;
+    font-weight: bold;
+    border: 1px #1265aa solid;
+    margin-left: 75px;
+    float: left;
+}
+
+    .l_button:hover {
+        cursor: pointer;
+    }
+
+.backToIndex {
+    text-align: right;
+}
+
+    .backToIndex li {
+        display: block;
+        list-style: none;
+        text-align: right;
+    }
+
+    .backToIndex a {
+        display: block;
+        list-style: none;
+        text-decoration: none;
+        padding-top: 5px;
+        padding-right: 10px;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+        .backToIndex a:hover {
+            text-decoration: underline;
+        }
+.u_depart{
+    float:left;
+}
+@media(max-width:767px){
+    .content_header{
+        margin-top:10px;
+    }
+}

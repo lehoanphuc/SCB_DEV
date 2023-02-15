@@ -1,0 +1,173 @@
+.left_content {
+    width: 200px;
+    float: left;
+    margin-top:5px;
+}
+
+.left_content_menu {
+    width: 200px;
+    background-repeat: repeat-x;
+    margin: 5px 0px 5px 0px;
+    float: left;
+    box-shadow: 3px 3px 3px #888888;
+    /*border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-color: #69a5d0;
+	border-bottom-color: #69a5d0;
+	border-left-color: #69a5d0;*/
+}
+
+.left_content_menu_header {
+    height: 31px;
+    /*background-image: url(../images/bgTitle.png);*/
+    width: 200px;
+    background-color: #64B5F6;
+}
+
+.left_left_content_menu_header {
+    height: 27px;
+    width: 3px;
+    /*background-image: url(../images/bgTitle.png);*/
+    float: left;
+    background-color: #64B5F6;
+}
+
+.middle_left_content_menu_header {
+    height: 30px;
+    line-height: 30px;
+    width: 193px;
+    /*background-image: url(../images/bgTitle.png);*/
+    /*background-repeat: repeat-x;*/
+    color: #69080F;
+    font-weight: bold;
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    background-color: #64B5F6;
+}
+
+d .middle_left_content_menu_header li {
+    padding-top: 8px;
+    padding-left: 2px;
+    display: block;
+    text-decoration: none;
+    color: #DF4E6F;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    list-style: none;
+}
+
+.left_menu_icon {
+    height: 20px;
+    width: 20px;
+    float: left;
+    /*background-image: url(../images/left_menu_icon.gif);*/
+    /*background-image: url(~/Images/MenuIcon/menu_inquiry_icon.gif);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+.back_left_content_menu_header {
+    height: 27px;
+    width: 2px;
+    background-image: url(../images/left_menu.gif);
+    float: left;
+}
+
+.right_left_content_menu_header {
+    height: 31px;
+    width: 4px;
+    /*background-image: url(../images/bgTitle.png);*/
+    float: right;
+    background-color: #64B5F6;
+}
+
+
+
+.left_content_menu_content {
+    /*background-image:url(../images/left_content_menu_content.gif);*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+}
+
+
+
+    .left_content_menu_content li {
+        width: 240px;
+        height: 24px;
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        float: left;
+        background-color: #e7e6da;
+        margin-bottom: 1px;
+        background-image: url(../images/submenu_icon.gif);
+        background-repeat: no-repeat;
+    }
+
+        .left_content_menu_content li a {
+            font-family: Tahoma, Geneva, sans-serif;
+            font-size: 11px;
+            width: 240px;
+            height: 24px;
+            display: block;
+            text-decoration: none;
+            color: #2f2f20;
+            padding-left: 30px;
+            padding-top: 5px;
+            text-align: left;
+            background-image: url(../images/submenu_icon.gif);
+            background-repeat: no-repeat;
+            float: left;
+        }
+
+            .left_content_menu_content li a:hover {
+                background-color: #d5d5d2;
+                height: 19px;
+                width: 210px;
+                background-image: url(../images/submenu_icon_active.gif);
+                background-repeat: no-repeat;
+            }
+
+    .left_content_menu_content ul {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 11px;
+        width: 200px;
+        height: 24px;
+        margin: 0px 0px 1px 0px;
+        text-align: left;
+        float: left;
+        background-color: #e7e6da;
+        background-image: url(../images/submenu_icon.gif);
+        background-repeat: no-repeat;
+    }
+
+        .left_content_menu_content ul a {
+            width: 200px;
+            height: 24px;
+            display: block;
+            text-decoration: none;
+            margin-top: 4px;
+            text-align: left;
+            color: #000;
+        }
+#mobile_button {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+

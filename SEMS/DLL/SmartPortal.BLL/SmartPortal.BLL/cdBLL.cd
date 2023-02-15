@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SmartPortal.BLL.PagesBLL">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgEAAAAAAAAAAAAAAAAAAAAEAEgAAAAAAAAAgEAA=</HashCode>
+      <FileName>PagesBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.WidgetRightBLL">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WidgetRightBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.WidgetPageBLL">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAgAIAAAA=</HashCode>
+      <FileName>WidgetPageBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.PortalBLL">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PortalBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.UsersBLL">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgEEAAAAAAAAAAAAAAAAAAAEAABAAAAAQAAAgAEA=</HashCode>
+      <FileName>UsersBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.CategoryBLL">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQwAAEAAAAAAAAAAAAAAACQAAAEAAAAAAAAQAAAABAA=</HashCode>
+      <FileName>CategoryBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.WidgetsBLL">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgEAAAAABBABAAAAAAAAAAAEAAAAACAAEAAAgAAA=</HashCode>
+      <FileName>WidgetsBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.RoleBLL">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAACAAAgEAgAAAAgAAgAAAAAA=</HashCode>
+      <FileName>RoleBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.MenuBLL">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAEAAABAAAAAAAAQAACAAAAEAAAAgAAAEgAAgIAA=</HashCode>
+      <FileName>MenuBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.MasterPageBLL">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MasterPageBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.ThemeBLL">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAgEAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>ThemeBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.PositionBLL">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PositionBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.GroupBLL">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GroupBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.UserInRole">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserInRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.SubSystemBLL">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubSystemBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.LanguageBLL">
+    <Position X="5.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAgEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>LanguageBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.PageRightBLL">
+    <Position X="1.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageRight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.MenuRightBLL">
+    <Position X="3.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MenuRightBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.NewsBLL">
+    <Position X="7.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAEAACAAAAAACAAAAABAAAAEAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>NewsBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.HTMLWidgetBLL">
+    <Position X="2.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>HTMLWidgetBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.ErrorBLL">
+    <Position X="5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ErrorBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartPortal.BLL.QuickLinkBLL">
+    <Position X="4.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuickLinkBLL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

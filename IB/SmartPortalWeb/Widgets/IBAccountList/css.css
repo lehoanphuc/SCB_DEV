@@ -1,0 +1,156 @@
+﻿.divAcct {
+    padding: 10px;
+}
+
+@media(max-width:979px) {
+    .divAcct {
+        padding: 0px;
+    }
+}
+
+a {
+    color: #fbaf1e;
+}
+
+.act_item {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.62);
+}
+
+.act-color {
+    /*color: #fbaf1e;*/
+    font-weight: bold;
+}
+
+.act_header {
+    border-bottom: solid 1px lightblue;
+    padding: 5px;
+    font-size: 15px;
+    color: #715f5f;
+}
+/*account image*/
+.act_item div:nth-child(2) div div:nth-child(1) img {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*col balance*/
+.act_item div:nth-child(2) div div:nth-child(2) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+    /*balance*/
+    .act_item div:nth-child(2) div div:nth-child(2) span {
+        font-size: 14px;
+        font-weight: bold;
+        color: #4e4024;
+    }
+/*img status*/
+.act_item div:nth-child(2) div div:nth-child(3) img {
+    width: 32px;
+    height: 32px;
+    margin-top: 3px;
+    /*float:right;*/
+}
+
+.a1 {
+    position: relative;
+}
+
+    .a1:hover {
+        color: #23527c;
+    }
+
+.a2 {
+    position: absolute;
+    top: 0px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    color: gainsboro;
+}
+.b0 {
+    margin-top: 5px;
+    font-size: 10px;
+    
+}
+
+.b1 {
+    top: 2px;
+    left: 13px;
+    font-size: 10px;
+
+    position: absolute;
+}
+
+.fnt_card {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.last_trans {
+    font-size: 13px;
+}
+
+.b2 {
+    left: 13px;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 40px;
+}
+
+.b3 {
+    left: 13px;
+    position: absolute;
+    font-size: 14px;
+    margin-top: 55px;
+}
+
+.b4 {
+    
+    left: 13px;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 80px;
+}
+
+
+.b5 {
+    left: 13px;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 95px;
+}
+
+.b6 {
+    left: 13px;
+    position: absolute;
+    font-size: 10px;
+    bottom: 26px;
+
+}
+
+.b7 {
+    left: 13px;
+    position: absolute;
+    font-size: 14px;
+    bottom: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+.acctnum {
+    font-size: 20px;
+}
+
+.acctype {
+    font-size: 14px;
+}
+
+.s1 {
+    color: #5C80B1;
+}

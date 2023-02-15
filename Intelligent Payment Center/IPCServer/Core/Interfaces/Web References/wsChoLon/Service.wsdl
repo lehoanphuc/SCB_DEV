@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getW_Bill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="danhba" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getW_BillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getW_BillResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="payW_Bill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="payW_BillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="payW_BillResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPay_Bill">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPay_BillResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkPay_BillResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="danhba" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCustomerInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getW_Bill_En">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="danhba" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getW_Bill_EnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getW_Bill_EnResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="payW_Bill_En">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="payW_Bill_EnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="payW_Bill_EnResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPayW_Bill_En">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPayW_Bill_EnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkPayW_Bill_EnResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerInfo_En">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="danhba" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ten" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="matkhau" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCustomerInfo_EnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCustomerInfo_EnResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getW_BillSoapIn">
+    <wsdl:part name="parameters" element="tns:getW_Bill" />
+  </wsdl:message>
+  <wsdl:message name="getW_BillSoapOut">
+    <wsdl:part name="parameters" element="tns:getW_BillResponse" />
+  </wsdl:message>
+  <wsdl:message name="payW_BillSoapIn">
+    <wsdl:part name="parameters" element="tns:payW_Bill" />
+  </wsdl:message>
+  <wsdl:message name="payW_BillSoapOut">
+    <wsdl:part name="parameters" element="tns:payW_BillResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPay_BillSoapIn">
+    <wsdl:part name="parameters" element="tns:checkPay_Bill" />
+  </wsdl:message>
+  <wsdl:message name="checkPay_BillSoapOut">
+    <wsdl:part name="parameters" element="tns:checkPay_BillResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:getCustomerInfo" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:getCustomerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getW_Bill_EnSoapIn">
+    <wsdl:part name="parameters" element="tns:getW_Bill_En" />
+  </wsdl:message>
+  <wsdl:message name="getW_Bill_EnSoapOut">
+    <wsdl:part name="parameters" element="tns:getW_Bill_EnResponse" />
+  </wsdl:message>
+  <wsdl:message name="payW_Bill_EnSoapIn">
+    <wsdl:part name="parameters" element="tns:payW_Bill_En" />
+  </wsdl:message>
+  <wsdl:message name="payW_Bill_EnSoapOut">
+    <wsdl:part name="parameters" element="tns:payW_Bill_EnResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPayW_Bill_EnSoapIn">
+    <wsdl:part name="parameters" element="tns:checkPayW_Bill_En" />
+  </wsdl:message>
+  <wsdl:message name="checkPayW_Bill_EnSoapOut">
+    <wsdl:part name="parameters" element="tns:checkPayW_Bill_EnResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInfo_EnSoapIn">
+    <wsdl:part name="parameters" element="tns:getCustomerInfo_En" />
+  </wsdl:message>
+  <wsdl:message name="getCustomerInfo_EnSoapOut">
+    <wsdl:part name="parameters" element="tns:getCustomerInfo_EnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="getW_Bill">
+      <wsdl:input message="tns:getW_BillSoapIn" />
+      <wsdl:output message="tns:getW_BillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill">
+      <wsdl:input message="tns:payW_BillSoapIn" />
+      <wsdl:output message="tns:payW_BillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPay_Bill">
+      <wsdl:input message="tns:checkPay_BillSoapIn" />
+      <wsdl:output message="tns:checkPay_BillSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo">
+      <wsdl:input message="tns:getCustomerInfoSoapIn" />
+      <wsdl:output message="tns:getCustomerInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getW_Bill_En">
+      <wsdl:input message="tns:getW_Bill_EnSoapIn" />
+      <wsdl:output message="tns:getW_Bill_EnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill_En">
+      <wsdl:input message="tns:payW_Bill_EnSoapIn" />
+      <wsdl:output message="tns:payW_Bill_EnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPayW_Bill_En">
+      <wsdl:input message="tns:checkPayW_Bill_EnSoapIn" />
+      <wsdl:output message="tns:checkPayW_Bill_EnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo_En">
+      <wsdl:input message="tns:getCustomerInfo_EnSoapIn" />
+      <wsdl:output message="tns:getCustomerInfo_EnSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getW_Bill">
+      <soap:operation soapAction="http://tempuri.org/getW_Bill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill">
+      <soap:operation soapAction="http://tempuri.org/payW_Bill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPay_Bill">
+      <soap:operation soapAction="http://tempuri.org/checkPay_Bill" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo">
+      <soap:operation soapAction="http://tempuri.org/getCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getW_Bill_En">
+      <soap:operation soapAction="http://tempuri.org/getW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill_En">
+      <soap:operation soapAction="http://tempuri.org/payW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPayW_Bill_En">
+      <soap:operation soapAction="http://tempuri.org/checkPayW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo_En">
+      <soap:operation soapAction="http://tempuri.org/getCustomerInfo_En" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getW_Bill">
+      <soap12:operation soapAction="http://tempuri.org/getW_Bill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill">
+      <soap12:operation soapAction="http://tempuri.org/payW_Bill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPay_Bill">
+      <soap12:operation soapAction="http://tempuri.org/checkPay_Bill" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo">
+      <soap12:operation soapAction="http://tempuri.org/getCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getW_Bill_En">
+      <soap12:operation soapAction="http://tempuri.org/getW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="payW_Bill_En">
+      <soap12:operation soapAction="http://tempuri.org/payW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPayW_Bill_En">
+      <soap12:operation soapAction="http://tempuri.org/checkPayW_Bill_En" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerInfo_En">
+      <soap12:operation soapAction="http://tempuri.org/getCustomerInfo_En" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://viettel.capnuoccholon.com.vn/Webservicethungan/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://viettel.capnuoccholon.com.vn/Webservicethungan/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://ws.otp.sm/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="OTPServer" targetNamespace="http://ws.otp.sm/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://otp:443/OTPWS/OTPServer?xsd=1" namespace="http://ws.otp.sm/" />
+    </xsd:schema>
+  </types>
+  <message name="initialize">
+    <part name="parameters" element="tns:initialize" />
+  </message>
+  <message name="initializeResponse">
+    <part name="parameters" element="tns:initializeResponse" />
+  </message>
+  <message name="sync">
+    <part name="parameters" element="tns:sync" />
+  </message>
+  <message name="syncResponse">
+    <part name="parameters" element="tns:syncResponse" />
+  </message>
+  <message name="version">
+    <part name="parameters" element="tns:version" />
+  </message>
+  <message name="versionResponse">
+    <part name="parameters" element="tns:versionResponse" />
+  </message>
+  <message name="bind">
+    <part name="parameters" element="tns:bind" />
+  </message>
+  <message name="bindResponse">
+    <part name="parameters" element="tns:bindResponse" />
+  </message>
+  <message name="unbind">
+    <part name="parameters" element="tns:unbind" />
+  </message>
+  <message name="unbindResponse">
+    <part name="parameters" element="tns:unbindResponse" />
+  </message>
+  <message name="addUser">
+    <part name="parameters" element="tns:addUser" />
+  </message>
+  <message name="addUserResponse">
+    <part name="parameters" element="tns:addUserResponse" />
+  </message>
+  <message name="postConstruct">
+    <part name="parameters" element="tns:postConstruct" />
+  </message>
+  <message name="postConstructResponse">
+    <part name="parameters" element="tns:postConstructResponse" />
+  </message>
+  <message name="preDestroy">
+    <part name="parameters" element="tns:preDestroy" />
+  </message>
+  <message name="preDestroyResponse">
+    <part name="parameters" element="tns:preDestroyResponse" />
+  </message>
+  <message name="terminal">
+    <part name="parameters" element="tns:terminal" />
+  </message>
+  <message name="terminalResponse">
+    <part name="parameters" element="tns:terminalResponse" />
+  </message>
+  <message name="getErrorMsg">
+    <part name="parameters" element="tns:getErrorMsg" />
+  </message>
+  <message name="getErrorMsgResponse">
+    <part name="parameters" element="tns:getErrorMsgResponse" />
+  </message>
+  <message name="addUserAdvanced">
+    <part name="parameters" element="tns:addUserAdvanced" />
+  </message>
+  <message name="addUserAdvancedResponse">
+    <part name="parameters" element="tns:addUserAdvancedResponse" />
+  </message>
+  <message name="delUser">
+    <part name="parameters" element="tns:delUser" />
+  </message>
+  <message name="delUserResponse">
+    <part name="parameters" element="tns:delUserResponse" />
+  </message>
+  <message name="userExist">
+    <part name="parameters" element="tns:userExist" />
+  </message>
+  <message name="userExistResponse">
+    <part name="parameters" element="tns:userExistResponse" />
+  </message>
+  <message name="getTokens">
+    <part name="parameters" element="tns:getTokens" />
+  </message>
+  <message name="getTokensResponse">
+    <part name="parameters" element="tns:getTokensResponse" />
+  </message>
+  <message name="addUserGroup">
+    <part name="parameters" element="tns:addUserGroup" />
+  </message>
+  <message name="addUserGroupResponse">
+    <part name="parameters" element="tns:addUserGroupResponse" />
+  </message>
+  <message name="tokenExist">
+    <part name="parameters" element="tns:tokenExist" />
+  </message>
+  <message name="tokenExistResponse">
+    <part name="parameters" element="tns:tokenExistResponse" />
+  </message>
+  <message name="delToken">
+    <part name="parameters" element="tns:delToken" />
+  </message>
+  <message name="delTokenResponse">
+    <part name="parameters" element="tns:delTokenResponse" />
+  </message>
+  <message name="getTokenLost">
+    <part name="parameters" element="tns:getTokenLost" />
+  </message>
+  <message name="getTokenLostResponse">
+    <part name="parameters" element="tns:getTokenLostResponse" />
+  </message>
+  <message name="setTokenLost">
+    <part name="parameters" element="tns:setTokenLost" />
+  </message>
+  <message name="setTokenLostResponse">
+    <part name="parameters" element="tns:setTokenLostResponse" />
+  </message>
+  <message name="getTokenLocked">
+    <part name="parameters" element="tns:getTokenLocked" />
+  </message>
+  <message name="getTokenLockedResponse">
+    <part name="parameters" element="tns:getTokenLockedResponse" />
+  </message>
+  <message name="setTokenLocked">
+    <part name="parameters" element="tns:setTokenLocked" />
+  </message>
+  <message name="setTokenLockedResponse">
+    <part name="parameters" element="tns:setTokenLockedResponse" />
+  </message>
+  <message name="getTokenLogout">
+    <part name="parameters" element="tns:getTokenLogout" />
+  </message>
+  <message name="getTokenLogoutResponse">
+    <part name="parameters" element="tns:getTokenLogoutResponse" />
+  </message>
+  <message name="setTokenLogout">
+    <part name="parameters" element="tns:setTokenLogout" />
+  </message>
+  <message name="setTokenLogoutResponse">
+    <part name="parameters" element="tns:setTokenLogoutResponse" />
+  </message>
+  <message name="getTokenEnable">
+    <part name="parameters" element="tns:getTokenEnable" />
+  </message>
+  <message name="getTokenEnableResponse">
+    <part name="parameters" element="tns:getTokenEnableResponse" />
+  </message>
+  <message name="setTokenEnable">
+    <part name="parameters" element="tns:setTokenEnable" />
+  </message>
+  <message name="setTokenEnableResponse">
+    <part name="parameters" element="tns:setTokenEnableResponse" />
+  </message>
+  <message name="getUserTokenInfoByToken">
+    <part name="parameters" element="tns:getUserTokenInfoByToken" />
+  </message>
+  <message name="getUserTokenInfoByTokenResponse">
+    <part name="parameters" element="tns:getUserTokenInfoByTokenResponse" />
+  </message>
+  <message name="getUserTokenInfoByUser">
+    <part name="parameters" element="tns:getUserTokenInfoByUser" />
+  </message>
+  <message name="getUserTokenInfoByUserResponse">
+    <part name="parameters" element="tns:getUserTokenInfoByUserResponse" />
+  </message>
+  <message name="transferToken">
+    <part name="parameters" element="tns:transferToken" />
+  </message>
+  <message name="transferTokenResponse">
+    <part name="parameters" element="tns:transferTokenResponse" />
+  </message>
+  <message name="auth">
+    <part name="parameters" element="tns:auth" />
+  </message>
+  <message name="authResponse">
+    <part name="parameters" element="tns:authResponse" />
+  </message>
+  <message name="ocraSign">
+    <part name="parameters" element="tns:ocraSign" />
+  </message>
+  <message name="ocraSignResponse">
+    <part name="parameters" element="tns:ocraSignResponse" />
+  </message>
+  <message name="ocraGenerateQS">
+    <part name="parameters" element="tns:ocraGenerateQS" />
+  </message>
+  <message name="ocraGenerateQSResponse">
+    <part name="parameters" element="tns:ocraGenerateQSResponse" />
+  </message>
+  <message name="ocraVerify">
+    <part name="parameters" element="tns:ocraVerify" />
+  </message>
+  <message name="ocraVerifyResponse">
+    <part name="parameters" element="tns:ocraVerifyResponse" />
+  </message>
+  <message name="getRetry">
+    <part name="parameters" element="tns:getRetry" />
+  </message>
+  <message name="getRetryResponse">
+    <part name="parameters" element="tns:getRetryResponse" />
+  </message>
+  <portType name="OTPServer">
+    <operation name="initialize">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/initializeRequest" message="tns:initialize" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/initializeResponse" message="tns:initializeResponse" />
+    </operation>
+    <operation name="sync">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/syncRequest" message="tns:sync" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/syncResponse" message="tns:syncResponse" />
+    </operation>
+    <operation name="version">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/versionRequest" message="tns:version" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/versionResponse" message="tns:versionResponse" />
+    </operation>
+    <operation name="bind">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/bindRequest" message="tns:bind" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/bindResponse" message="tns:bindResponse" />
+    </operation>
+    <operation name="unbind">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/unbindRequest" message="tns:unbind" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/unbindResponse" message="tns:unbindResponse" />
+    </operation>
+    <operation name="addUser">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/addUserRequest" message="tns:addUser" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/addUserResponse" message="tns:addUserResponse" />
+    </operation>
+    <operation name="postConstruct">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/postConstructRequest" message="tns:postConstruct" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/postConstructResponse" message="tns:postConstructResponse" />
+    </operation>
+    <operation name="preDestroy">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/preDestroyRequest" message="tns:preDestroy" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/preDestroyResponse" message="tns:preDestroyResponse" />
+    </operation>
+    <operation name="terminal">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/terminalRequest" message="tns:terminal" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/terminalResponse" message="tns:terminalResponse" />
+    </operation>
+    <operation name="getErrorMsg">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getErrorMsgRequest" message="tns:getErrorMsg" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getErrorMsgResponse" message="tns:getErrorMsgResponse" />
+    </operation>
+    <operation name="addUserAdvanced">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/addUserAdvancedRequest" message="tns:addUserAdvanced" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/addUserAdvancedResponse" message="tns:addUserAdvancedResponse" />
+    </operation>
+    <operation name="delUser">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/delUserRequest" message="tns:delUser" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/delUserResponse" message="tns:delUserResponse" />
+    </operation>
+    <operation name="userExist">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/userExistRequest" message="tns:userExist" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/userExistResponse" message="tns:userExistResponse" />
+    </operation>
+    <operation name="getTokens">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getTokensRequest" message="tns:getTokens" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getTokensResponse" message="tns:getTokensResponse" />
+    </operation>
+    <operation name="addUserGroup">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/addUserGroupRequest" message="tns:addUserGroup" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/addUserGroupResponse" message="tns:addUserGroupResponse" />
+    </operation>
+    <operation name="tokenExist">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/tokenExistRequest" message="tns:tokenExist" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/tokenExistResponse" message="tns:tokenExistResponse" />
+    </operation>
+    <operation name="delToken">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/delTokenRequest" message="tns:delToken" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/delTokenResponse" message="tns:delTokenResponse" />
+    </operation>
+    <operation name="getTokenLost">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getTokenLostRequest" message="tns:getTokenLost" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getTokenLostResponse" message="tns:getTokenLostResponse" />
+    </operation>
+    <operation name="setTokenLost">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/setTokenLostRequest" message="tns:setTokenLost" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/setTokenLostResponse" message="tns:setTokenLostResponse" />
+    </operation>
+    <operation name="getTokenLocked">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getTokenLockedRequest" message="tns:getTokenLocked" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getTokenLockedResponse" message="tns:getTokenLockedResponse" />
+    </operation>
+    <operation name="setTokenLocked">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/setTokenLockedRequest" message="tns:setTokenLocked" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/setTokenLockedResponse" message="tns:setTokenLockedResponse" />
+    </operation>
+    <operation name="getTokenLogout">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getTokenLogoutRequest" message="tns:getTokenLogout" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getTokenLogoutResponse" message="tns:getTokenLogoutResponse" />
+    </operation>
+    <operation name="setTokenLogout">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/setTokenLogoutRequest" message="tns:setTokenLogout" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/setTokenLogoutResponse" message="tns:setTokenLogoutResponse" />
+    </operation>
+    <operation name="getTokenEnable">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getTokenEnableRequest" message="tns:getTokenEnable" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getTokenEnableResponse" message="tns:getTokenEnableResponse" />
+    </operation>
+    <operation name="setTokenEnable">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/setTokenEnableRequest" message="tns:setTokenEnable" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/setTokenEnableResponse" message="tns:setTokenEnableResponse" />
+    </operation>
+    <operation name="getUserTokenInfoByToken">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getUserTokenInfoByTokenRequest" message="tns:getUserTokenInfoByToken" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getUserTokenInfoByTokenResponse" message="tns:getUserTokenInfoByTokenResponse" />
+    </operation>
+    <operation name="getUserTokenInfoByUser">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getUserTokenInfoByUserRequest" message="tns:getUserTokenInfoByUser" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getUserTokenInfoByUserResponse" message="tns:getUserTokenInfoByUserResponse" />
+    </operation>
+    <operation name="transferToken">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/transferTokenRequest" message="tns:transferToken" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/transferTokenResponse" message="tns:transferTokenResponse" />
+    </operation>
+    <operation name="auth">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/authRequest" message="tns:auth" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/authResponse" message="tns:authResponse" />
+    </operation>
+    <operation name="ocraSign">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/ocraSignRequest" message="tns:ocraSign" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/ocraSignResponse" message="tns:ocraSignResponse" />
+    </operation>
+    <operation name="ocraGenerateQS">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/ocraGenerateQSRequest" message="tns:ocraGenerateQS" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/ocraGenerateQSResponse" message="tns:ocraGenerateQSResponse" />
+    </operation>
+    <operation name="ocraVerify">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/ocraVerifyRequest" message="tns:ocraVerify" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/ocraVerifyResponse" message="tns:ocraVerifyResponse" />
+    </operation>
+    <operation name="getRetry">
+      <input wsam:Action="http://ws.otp.sm/OTPServer/getRetryRequest" message="tns:getRetry" />
+      <output wsam:Action="http://ws.otp.sm/OTPServer/getRetryResponse" message="tns:getRetryResponse" />
+    </operation>
+  </portType>
+  <binding name="OTPServerPortBinding" type="tns:OTPServer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="initialize">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="sync">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="version">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="bind">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="unbind">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="postConstruct">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="preDestroy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="terminal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getErrorMsg">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addUserAdvanced">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="delUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="userExist">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTokens">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addUserGroup">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="tokenExist">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="delToken">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTokenLost">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setTokenLost">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTokenLocked">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setTokenLocked">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTokenLogout">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setTokenLogout">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getTokenEnable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setTokenEnable">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getUserTokenInfoByToken">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getUserTokenInfoByUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="transferToken">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="auth">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ocraSign">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ocraGenerateQS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ocraVerify">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getRetry">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="OTPServer">
+    <port name="OTPServerPort" binding="tns:OTPServerPortBinding">
+      <soap:address location="https://otp:443/OTPWS/OTPServer" />
+    </port>
+  </service>
+</definitions>

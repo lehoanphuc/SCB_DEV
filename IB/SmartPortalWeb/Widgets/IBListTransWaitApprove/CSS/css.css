@@ -1,0 +1,50 @@
+@media(max-width:768px) {
+
+    input[type="submit"]{
+        margin-top:10px;
+    }
+}
+.style1 {
+    width: 100%;
+}
+
+.thtdbold {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-left: solid 1px #b9bfc1;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtd {
+    border-left: solid 1px #b9bfc1;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtdf {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtdff {
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtr {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+}
+
+.thtds {
+    padding: 5px 5px 5px 5px;
+}
+
+.al {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

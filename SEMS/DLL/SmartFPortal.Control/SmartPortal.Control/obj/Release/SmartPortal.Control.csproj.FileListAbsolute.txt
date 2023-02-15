@@ -1,0 +1,17 @@
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Control.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Control.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Control.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\BouncyCastle.Crypto.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\itextsharp.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.DAL.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.DAL.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.DAL.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\itextsharp.xml
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Exception.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\bin\Release\SmartPortal.Exception.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\obj\Release\SmartPortal.Control.csproj.AssemblyReference.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\obj\Release\SmartPortal.Control.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\obj\Release\SmartPortal.Control.csproj.CopyComplete
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\obj\Release\SmartPortal.Control.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartFPortal.Control\SmartPortal.Control\obj\Release\SmartPortal.Control.pdb

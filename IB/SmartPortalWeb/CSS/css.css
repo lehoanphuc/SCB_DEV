@@ -1,0 +1,388 @@
+﻿/*header text*/
+.al {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
+    .al img, .th img, img {
+        max-width: 100%;
+    }
+
+.divError {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.th {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pading0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+/*table*/
+.thtdf {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-top: solid 1px;
+    border-color: skyblue;
+    width: 25%;
+}
+
+.thtd {
+    border-left: solid 1px;
+    border-top: solid 1px;
+    border-color: skyblue;
+    width: 25%;
+}
+
+.thtdbold {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-left: solid 1px;
+    border-top: solid 1px;
+    border-color: skyblue;
+    width: 25%;
+}
+
+.thtdff {
+    border-top: solid 1px;
+    border-color: skyblue;
+    width: 25%;
+}
+
+.thtr {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+}
+
+.thtds {
+    padding: 10px 5px 10px 5px;
+}
+
+/*processbar*/
+.heightmin23 {
+    min-height: 23px;
+}
+
+.cssProgress {
+    /*width: 770px;*/
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+    .cssProgress .progress1 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+
+    .cssProgress .cssProgress-bar {
+        display: block;
+        float: left;
+        width: 0%;
+        height: 100%;
+        background: #f9e16a;
+        /*box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.1);*/
+        -webkit-transition: width 0.8s ease-in-out;
+        transition: width 0.8s ease-in-out;
+    }
+
+.progress1 {
+    background-color: #64B5F6;
+    /*box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);*/
+}
+
+    .progress1 .cssProgress-bar {
+        height: 5px;
+    }
+
+.cssProgress .cssProgress-active {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent);
+    background-size: 35px 35px;
+}
+
+.cssProgress .cssProgress-active {
+    -webkit-animation: cssProgressActive 0.8s linear infinite;
+    -ms-animation: cssProgressActive 0.8s linear infinite;
+    animation: cssProgressActive 0.8s linear infinite;
+}
+
+.amount {
+    width: 83% !important;
+}
+
+@keyframes cssProgressActive {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 35px 35px;
+    }
+}
+
+/*endprocessbar*/
+
+/*gridview res*/
+.footable > thead > tr > th, .footable > thead > tr > td {
+    position: relative
+}
+
+.footable {
+    border-spacing: 0;
+    width: 100%;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #444
+}
+
+    .footable.breakpoint > tbody > tr > td.expand {
+        background: url(img/plus.png) no-repeat 5px center;
+        padding-left: 40px
+    }
+
+    .footable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+        background: url(img/minus.png) no-repeat 5px center
+    }
+
+    .footable.breakpoint > tbody > tr.footable-row-detail {
+        background: #eee
+    }
+
+    .footable > tbody > tr:hover {
+        background: rgba(235,183,183,.3)
+    }
+
+    .footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+        cursor: pointer
+    }
+
+    .footable > tbody > tr > td, .footable > thead > tr > th {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        text-align: left;
+    }
+
+    .footable > thead > tr > th {
+        color: #fff;
+        background: #847675;
+    }
+
+.table > thead > tr > th, .table > thead > tr > td {
+    white-space: nowrap;
+}
+
+.footable > tbody img {
+    vertical-align: middle
+}
+/*legend gridview res*/
+
+/*pager*/
+@media(max-width:991px) {
+    .text-center-mb {
+        text-align: center;
+    }
+}
+
+.table-bordered {
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.footable-empty {
+    color: red;
+}
+
+.line23, span.line23 {
+    line-height: 23px;
+}
+
+.pagerstyle {
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+    .pagerstyle:hover {
+        background-color: white !important;
+    }
+
+    .pagerstyle table > tbody > tr > td {
+        display: inline;
+    }
+
+    .pagerstyle td {
+        padding: 5px !important;
+    }
+
+    .pagerstyle table > tbody > tr > td > a,
+    .pagerstyle table > tbody > tr > td > span {
+        position: relative;
+        padding: 8px 12px;
+        line-height: 1.42857143;
+        text-decoration: none;
+        color: #dd4814;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        margin-left: -1px;
+        float: left;
+    }
+
+    .pagerstyle table > tbody > tr > td > span {
+        position: relative;
+        float: left;
+        padding: 8px 12px;
+        line-height: 1.42857143;
+        text-decoration: none;
+        margin-left: -1px;
+        z-index: 2;
+        color: #aea79f;
+        background-color: #E3F2FD;
+        border-color: #dddddd;
+        cursor: default;
+    }
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+    .upload-btn-wrapper input[type=file] {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+/*legend pager*/
+@media(max-width:767px) {
+    .handle-xs {
+        color: #fbaf1e;
+        border: 0;
+        border-bottom: 1px solid #fbaf1e;
+        background: none;
+    }
+
+    .textright-mb {
+        text-align: right;
+    }
+
+    .label-mb {
+        border-bottom: none;
+        color: #000;
+    }
+
+    .col-xs-12.right {
+        text-align: left !important;
+    }
+
+    .content .item .row:nth-child(2n), .content .item .row:nth-child(2n) div.row:nth-child(2n+1) {
+        background: #f5f5f4;
+    }
+
+        .content .item .row:nth-child(2n+1), .content .item .row:nth-child(2n) div.row:nth-child(2n), .content .item .row:nth-child(2n+1) div.row {
+            background: #fff;
+        }
+}
+
+#divError {
+    padding: 5px;
+    text-align: center;
+}
+
+.footable-header, .footable > thead > tr > th {
+    background-color: #7A58BF !important;
+}
+
+a:hover, a:focus {
+    color: #1e4f92;
+    text-decoration: none;
+}
+
+.aspCheckBox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.aspCheckBox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    margin-left: -14px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    top: 5px;
+}
+
+.aspCheckBox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    margin-left: -11px;
+    font-size: 12px;
+    color: #555555;
+    top: 0;
+}
+
+.aspCheckBox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.aspCheckBox input[type="checkbox"]:checked + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.aspCheckBox input[type="checkbox"]:disabled + label {
+    opacity: 0.65;
+}
+
+.aspCheckBox input[type="checkbox"]:disabled + label::before {
+    background-color: #eeeeee;
+    cursor: not-allowed;
+}
+
+
+.countdown {
+    text-align: left;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.countdown_time {
+    font-weight: bold;
+}
+
+.countdown__time--orange {
+    color: orange;
+}
+
+.countdown__time--red {
+    color: red;
+}

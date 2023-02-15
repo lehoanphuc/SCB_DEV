@@ -1,0 +1,41 @@
+﻿#imenu { 
+  width: 98%; 
+  border: 1px solid gray; 
+  padding: 0px; 
+  margin:20px auto 2px auto;
+  background-image:url(../images/banner_bg.gif);
+  background-repeat:repeat-x;
+}
+ 
+#imenu h3 { 
+  height: 20px; 
+  font-weight: normal; 
+ 
+  color: #fff; 
+  padding: 3px 0px 0px 7px; 
+  margin: 0px; 
+}
+ #imenu h3 a
+ {
+ 	color:gray;
+ 	font-weight:bold;
+ 	font-size:9pt;
+ }
+#imenu ul, #imenu ul li { 
+  padding-top:5px;
+  padding-left:5px;
+  margin: 0px; 
+  list-style: none; 
+}
+ 
+#imenu ul li { 
+  height: 20px; 
+  vertical-align: middle; 
+}
+ 
+#imenu ul li a { 
+  display: block; 
+  border-bottom: 1px dashed #eee; 
+  text-decoration: none; 
+  font-weight: bold; 
+}

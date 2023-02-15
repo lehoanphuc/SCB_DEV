@@ -1,0 +1,150 @@
+﻿
+td {
+    padding: 5px;
+}
+
+.thlb {
+    width: 15%;
+}
+
+.thtds {
+    width: 28%;
+}
+
+.thbtn {
+    width: 14%;
+}
+
+.style1 {
+    width: 100%;
+}
+
+.thtdbold {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-left: solid 1px #b9bfc1;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtd {
+    border-left: solid 1px #b9bfc1;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtdf {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtdff {
+    border-top: solid 1px #b9bfc1;
+}
+
+.thtr {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+}
+
+.thtds {
+    padding: 5px 5px 5px 5px;
+}
+
+.btn-group {
+    margin: 10px;
+    text-align: center;
+}
+
+.divResult {
+    padding: 5px;
+}
+
+#divSearch {
+    background-color: #F8F8F8;
+    border: solid 1px #B9BFC1;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.al {
+    font-weight: bold;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-control, .DATETIME {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 11.5px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.textarea1 {
+    resize: none;
+    height: 52px;
+}
+.textarea2 {
+	resize: none;
+	height: 42px;
+}
+
+    .form-control[disabled], fieldset[disabled] .form-control {
+        cursor: not-allowed;
+    }
+
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+        background-color: #eee;
+        opacity: 1;
+    }
+
+select.form-control {
+    height: 30px;
+    max-width: 226px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 90px;
+    margin-bottom: 0;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #918a8b;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.GVTran {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}

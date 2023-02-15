@@ -1,0 +1,39 @@
+
+.footer {
+    position: absolute;
+    padding: 0;
+    margin: auto;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+}
+.bgfooter {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(67,41,137,1) 4%, rgba(117,92,185,1) 71%);
+    height: 60px;
+    margin-top: 40px;
+}
+
+.footer_logo {
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    float: left;
+    /*position: absolute;*/
+    list-style: none;
+    margin-top: 5px;
+}
+
+.footer_info {
+    font-size: 12px;
+    text-align: left;
+    text-anchor: start;
+    margin-top: 12px;
+    min-height: 50px;
+    display: block;
+    list-style: none;
+    color: #fff;
+    margin: auto;
+}

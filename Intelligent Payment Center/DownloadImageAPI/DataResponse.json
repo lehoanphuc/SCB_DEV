@@ -1,0 +1,136 @@
+{
+  "UpstreamCCT": {
+    "headerkey": "string",
+    "type": "string",
+    "userId": "string",
+    "messageFormatId": "string",
+    "cctList": [
+      {
+        "msgId": "string",
+        "debtFIBranchCode": "string",
+        "credtFIBranchCode": "string",
+        "totalTranNo": "string",
+        "totalSettlementAmt": "number",
+        "settlementAccIdIBAN": "string",
+        "settlementCredtFIBranchCode": "string",
+        "settlementFundDebtFIBranchCode": "string",
+        "settlementMethod": "string",
+        "transactionList": [
+          {
+            "askACK": "string",
+            "reasonCode": "string",
+            "reconciliationNo": "string",
+            "transactionId": "string",
+            "settlementDateInstruction": "string",
+            "eventFundCode": "string",
+            "totalFundSttlmAmt": "number",
+            "settlementDate": "string",
+            "transactionDate": "string",
+            "queuingCategoryCode": "string",
+            "transferAmt": "number",
+            "chargeBearerCode": "string",
+            "chargeAmount": [
+              1000,
+              2000,
+              3000,
+              4000
+            ],
+            "debtIdCategory": "string",
+            "debtId": "string",
+            "tinNo": "string",
+            "debtPostalAddress": "string",
+            "debtName": "string",
+            "debtPhNo": "string",
+            "debtorAgentFIBranchNo": "string",
+            "debtAgentFIBranchName": "string",
+            "credtAgentFIBranchNo": "string",
+            "credtAgentFIBranchName": "string",
+            "credtName": "string",
+            "credtPostalAddress": "string",
+            "credtIdCategory": "string",
+            "credtId": "string",
+            "credtPhNo": "phno",
+            "transactionNote": "note",
+            "otherInformation": [
+              {
+                "COST": "100"
+              }
+
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "UpstreamCCTrespon": {
+    "connSeqNo": "string",
+    "maxLength": 50,
+    "code": "0000",
+    "desc": "Success"
+  },
+  "UpstreamNotificationToReceive": {
+    "headerkey": "string",
+    "type": "string",
+    "userId": "string",
+    "messageFormatId": "string",
+    "notificationToReceiveList": [
+      {
+        "msgId": "string",
+        "transactionId": "string",
+        "reconciliationNo": "string",
+        "credtFIBranchCode": "string",
+        "debtFIBranchCode": "string",
+        "messageType": "string",
+        "message": "string",
+        "credtPostalAddress": [
+          "value string1",
+          "value string2"
+        ],
+        "cbmnetProcessNo": "string",
+        "transactionDate": "string"
+      }
+    ]
+  },
+  "UpstreamNotificationToReceiverespon": {
+    "connSeqNo": "SeqNo",
+    "code": "0000",
+    "desc": "Success"
+  },
+  "UpstreamCCTFailValidation": {
+    "transactionID": "string",
+    "creditorBankCode": "string"
+  },
+  "UpstreamCCTFailValidationrespon": {
+    "transRef": "0000",
+    "status": "Success",
+    "description": "Success"
+  },
+  "UpstreamCCTSuccessValidation": {
+    "DwnstrmMsgSeqtlNb": "string",
+    "FIToFIPmtStsRpt": {
+      "MsgId": "string",
+      "CreDtTm": "string",
+      "TxInfAndSts": {
+        "StsId": "string",
+        "OrgnlEndToEndId": "string",
+        "OrgnlTxId": "string",
+        "AccptncDtTm": "string",
+        "ClrSysRef": "string",
+        "IntrBkSttlmDt": "string",
+        "TtlNetNtry": "number",
+        "Avlbty": "number"
+      }
+    }
+  },
+  "UpstreamCCTSuccessValidationrespon": {
+    "transRef": "0000",
+    "status": "Success",
+    "description": "Success"
+  },
+  "TokenResponseExample": {
+    "access_token": "HvOaJlC70RlJUN8M2eoLB8Z8KTnV-NEtwoMwLUD8ySGTjea3iYrylqElPRljexL9TluP86KWGxCSeR0jc6zaoSmZuIyDsW6Ujsl3d072jVPzTIL1OCsgEGgbRp__WaipS4-rHNJLyJo7TezZsYrZoMTF9KVgJYWJEfBWlCl08cMyBtcvojP-p-f3lnETR0p4aNULHlsDTo-CJacylAfvdxNrNb7AfIG-kCpPhfBd6JpHm7UiHTZ6vkUFX3d1IcCB",
+    "token_type": "bearer",
+    "expires_in": 86399
+  },
+  "TokenBodyRequestExample": { "grant_type": "client_credentials" }
+}

@@ -1,0 +1,37 @@
+﻿#gvPages {
+width: 100%;
+}
+
+.pager, .pager td {
+background-color: #F5F5F5;
+}
+
+.pager a {
+/*background-color:#F8F8F8;*/
+padding: 3px 5px 3px 5px;
+text-decoration: none;
+margin-left: 4px;
+}
+
+.pager a:hover {
+background-color: #F5F5F5;
+color: #555;
+}
+
+.pager span {
+background-color: #8a7ec8;
+color: #FFF;
+padding: 3px 5px 3px 5px;
+}
+
+.gvFooterStyle {
+background-color: #EAFAFF;
+color: #003366;
+}
+
+.gvHeader {
+    background-color: #6966aa;
+    color: #FFF;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}

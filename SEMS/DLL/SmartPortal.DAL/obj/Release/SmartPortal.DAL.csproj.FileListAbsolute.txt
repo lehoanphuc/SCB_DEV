@@ -1,0 +1,14 @@
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.DAL.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.DAL.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.DAL.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\BouncyCastle.Crypto.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\itextsharp.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.Exception.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.Exception.pdb
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\SmartPortal.Exception.dll.config
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\bin\Release\itextsharp.xml
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\obj\Release\SmartPortal.DAL.csproj.AssemblyReference.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\obj\Release\SmartPortal.DAL.csproj.CoreCompileInputs.cache
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\obj\Release\SmartPortal.DAL.csproj.CopyComplete
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\obj\Release\SmartPortal.DAL.dll
+D:\JITS\SCB\siamvn\SEMS\DLL\SmartPortal.DAL\obj\Release\SmartPortal.DAL.pdb

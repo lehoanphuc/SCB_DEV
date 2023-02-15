@@ -1,0 +1,328 @@
+﻿.ddsmoothmenu {
+    width: 100%;
+    display: none;
+}
+
+    .ddsmoothmenu ul {
+        z-index: 1206;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background: #ffffff;
+        font-size: 16px;
+    }
+
+        /*Top level list items*/
+        .ddsmoothmenu ul li {
+            position: relative;
+            display: inline;
+            float: left;
+        }
+
+            /*Top level menu link items style*/
+            .ddsmoothmenu ul li a {
+                display: block;
+                background: #FFF; /*background of menu items (default state)*/
+                padding: 20px 15px 20px 0;
+                text-decoration: none;
+                font-weight: 500;
+            }
+
+            * html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+                display: inline-block;
+            }
+
+            .ddsmoothmenu ul li a {
+                color: #257d2f;
+            }
+
+
+                .ddsmoothmenu ul li a:hover {
+                    background: #FFF; /*background of menu items during onmouseover (hover state)*/
+                    color: #105718;
+                }
+
+            /* sub menus */
+            .ddsmoothmenu ul li ul {
+                position: absolute;
+                left: -3000px;
+                display: none; /*collapse all sub menus to begin with*/
+                visibility: hidden;
+                min-width: 200px;
+                width: auto;
+                background: #7A58BF;
+                border-radius: 4px;
+                box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+                -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08)
+            }
+
+                /*Sub level menu list items (alters style from Top level List Items)*/
+                .ddsmoothmenu ul li ul li {
+                    display: list-item;
+                    float: none;
+                }
+
+                    .ddsmoothmenu ul li ul li:hover a {
+                        background: rgba(0, 0, 0, 0.1);
+                        color: #fff;
+                    }
+
+                    /*All subsequent sub menu levels vertical offset after 1st level sub menu */
+                    .ddsmoothmenu ul li ul li ul {
+                        top: 0;
+                        position: absolute;
+                        left: -3000px;
+                        display: none; /*collapse all sub menus to begin with*/
+                        visibility: hidden;
+                        width: auto;
+                        background: #7A58BF;
+                        border-radius: 4px;
+                        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+                        -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08)
+                    }
+
+                    /* Sub level menu links style */
+                    .ddsmoothmenu ul li ul li a {
+                        margin: 0;
+                        padding: 10px 10px;
+                        font-weight: 400;
+                        text-align: left;
+                        margin: 2px 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        max-width: 100%;
+                        background: #7A58BF;
+                        color: #bab8d2;
+                    }
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu {
+    height: 1%;
+}
+/*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass {
+    display: none;
+}
+
+.rightarrowclass {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    display: none;
+}
+
+.leftarrowclass {
+    margin-right: 5px;
+    display: none;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: #ccc; /* generally should be just a little lighter than the box-shadow color for CSS3 capable browsers */
+}
+
+.toplevelshadow {
+    margin: 5px 0 0 5px; /* in NON CSS3 capable browsers gives the offset of the shadow */
+    opacity: 0.8; /* shadow opacity mostly for NON CSS3 capable browsers. Doesn't work in IE */
+}
+
+.ddcss3support .ddshadow.toplevelshadow {
+    margin: 0; /* in CSS3 capable browsers overrides offset from NON CSS3 capable browsers, allowing the box-shadow values in the next selector to govern that */
+    /* opacity: 1; */ /* optionally uncomment this to remove partial opacity for browsers supporting a box-shadow property which has its own slight gradient opacity */
+}
+
+.ddcss3support .ddshadow {
+    background-color: transparent;
+    box-shadow: 5px 5px 5px #aaa; /* box-shadow color generally should be a little darker than that for the NON CSS3 capable browsers background-color */
+    -moz-box-shadow: 5px 5px 5px #aaa;
+    -webkit-box-shadow: 5px 5px 5px #aaa;
+}
+
+/* ######### Mobile menu container CSS ######### */
+
+div.ddsmoothmobile { /* main mobile menu container */
+    background: white;
+    color: #4e4c77;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px; /* width of mobile menu */
+    height: 100%;
+    overflow: hidden;
+    visibility: hidden;
+    border-radius: 0 0 10px 0;
+    box-shadow: 0 0 10px gray;
+}
+
+    div.ddsmoothmobile a {
+        color: #4e4c77;
+        text-decoration: none;
+    }
+
+    div.ddsmoothmobile div.topulsdiv { /* Single DIV that surrounds all top level ULs before being flattened, or the ULs on the "frontpage" of the menu */
+        position: relative;
+        background: white;
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    div.ddsmoothmobile ul { /* style for all ULs in general inside mobile menu */
+        list-style: none;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.ddsmoothmobile div.topulsdiv ul.submenu { /* top level ULs style */
+    }
+
+
+    div.ddsmoothmobile ul.submenu { /* sub level ULs style */
+        position: absolute;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    div.ddsmoothmobile ul li {
+        border-bottom: 1px solid #4e4c77;
+        position: relative;
+        font-weight: bold;
+        width:100%;
+    }
+
+        div.ddsmoothmobile ul li.breadcrumb { /* breadcrumb LI that's added to the top of every sub level UL */
+            cursor: pointer;
+            padding: 10px;
+            background: #FFF;
+        }
+
+        div.ddsmoothmobile ul li a {
+            display: block;
+            padding: 6px;
+        }
+
+            div.ddsmoothmobile ul li a:hover {
+                background: #FFF; 
+                color: #7976b3;
+            }
+
+/* ############# Animated Drawer icon (mobile menu toggler) CSS ############# */
+
+.animateddrawer {
+    width: 3em;
+    height: 2.8em;
+    outline: none;
+    position: fixed; /* BY default, make toggler fixed on screen */
+    display: none;
+    top: 10px; /* Position at upper right corner */
+    right: 10px;
+    background: transparent;
+    z-index: 1206;
+}
+
+    .animateddrawer:before, .animateddrawer:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0.6em; /* height of top and bottom drawer line */
+        background: #7976b3;
+        border-radius: 2px;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease-in; /* set transition type and time */
+        transition: all 0.3s ease-in;
+    }
+
+    .animateddrawer:after {
+        top: auto;
+        bottom: 0;
+    }
+
+    .animateddrawer span {
+        width: 100%;
+        height: 0.6em; /* height of middle drawer line */
+        background: #7976b3;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.3em; /* set this to - half of middle drawer line height */
+        border-radius: 2px;
+        -ms-transform-origin: 50% 50%;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transition: all 0.3s ease-in 0.3s; /* set transition type and time */
+        transition: all 0.3s ease-in 0.3s;
+    }
+
+        .animateddrawer span::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0.6em; /* height of middle drawer line */
+            background: #7976b3;
+            border-radius: 2px;
+            position: absolute;
+            -ms-transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-transition: all 0.3s ease-in 0.3s; /* set transition type and time */
+            transition: all 0.3s ease-in 0.3s;
+        }
+
+    .animateddrawer.open {
+    }
+
+        .animateddrawer.open:before { /* style when .open class is added to button */
+            top: 50%;
+            margin-top: -0.3em; /* set this to - half of top drawer line height */
+            opacity: 0;
+        }
+
+        .animateddrawer.open:after { /* style when .open class is added to button */
+            bottom: 50%;
+            opacity: 0;
+        }
+
+        .animateddrawer.open span { /* style when .open class is added to button */
+            -ms-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+            .animateddrawer.open span:after { /* style when .open class is added to button */
+                -ms-transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+            }
+
+.breadcrumb {
+    margin-bottom:5px !important;
+}
+div.ddsmoothmobile ul li a i {
+    margin-right: 4px;
+    font-size: 13px;
+    width: 16px;
+    text-align: center;
+}
+div.ddsmoothmobile ul li b {
+    margin-left:3px;
+}
+img {
+    max-width:100%;
+}

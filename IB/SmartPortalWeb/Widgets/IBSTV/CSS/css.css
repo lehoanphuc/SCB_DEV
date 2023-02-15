@@ -1,0 +1,6 @@
+
+@media(max-width:767px) {
+    .content .item .row:nth-child(2n+1) {
+        background: #f5f5f4;
+    }
+}

@@ -1,0 +1,410 @@
+﻿html, body
+{
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: 100%;
+    background: #ffffff;
+}
+.placeholder { color: #aaa; }
+.ibLogin
+{
+    background: #ffffff url(images/home_bg.jpg) no-repeat top;
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    height: 620px;
+    overflow: hidden;
+}
+
+body, td, th
+{
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.tbl_layout
+{
+    /*background-color: #ffffff;*/
+    background-color: transparent;
+}
+
+.div_header
+{
+    margin-top: 40px;
+}
+
+.td_box
+{
+    /*background: url(images/middle_box.gif) repeat-y left bottom;*/ 
+    vertical-align: top;
+    width: 170px;
+    background: -webkit-linear-gradient(top, #f0f0f0 20px, #fdfdfd 55px, #fdfdfd 70%, #f0f0f0);
+    /*background: #f0f0f0 url(images/login-box-bg.png) repeat-x;
+    background: rgba(253, 253, 253, 0.85);
+     border: 1px solid #746868;
+    border-radius: 5px; */
+    background-color : white;
+    box-shadow:7px 10px 10px 0 rgba(0,0,0,0.30),0 6px 3px 0 rgba(0,0,0,0.23);
+}
+
+.td_box .accesskey
+{
+    //font-style: underline;
+}
+.td_box
+{
+    font-family:'Helvetica';
+}
+.div_topbox
+{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top:5px #a02226 solid;
+    color:#a02226;
+    background: rgba(168, 162, 162, 0.13);
+}
+
+.div_middlebox
+{
+    /*background: url(images/bottom_box.gif) no-repeat left bottom;*/
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 0px;
+    padding-right: 18px;
+}
+
+.div_middlebox .instructions
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.div_middlebox .label
+{
+    color:#a0a0a0;
+    margin-bottom: 6px;
+    font-size:14px;
+}
+
+.div_middlebox .input
+{
+    margin-bottom: 10px;
+}
+
+.div_middlebox>.input>.divtext
+{
+    width: 210px;
+    border:1px solid #ccc6c6;
+    background:white !important;
+    outline : none;
+    color:#a02226;
+    height:33px;
+}
+.divtext>span>img{
+    float:left;
+    width:10%;
+    margin-top:4px;
+    margin-left: 10px;
+}
+.divtext>input{
+    float:right;
+    border:none;
+    outline:none;
+    height:100%;
+    padding:0px;
+    font-size:14px;
+    width:80%;
+}
+.div_middlebox .input img
+{
+    margin-bottom: 4px;
+}
+.div_middlebox .openid
+{
+    margin-bottom: 10px;
+}
+
+.div_middlebox .button
+{
+    margin-bottom: 10px;
+}
+
+.div_middlebox .button a, .div_middlebox .button a:link, .div_middlebox .button a:hover, .div_middlebox .button a:active, .div_middlebox .button a:visited
+{
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+.div_middlebox .check
+{
+    margin-bottom: 10px;
+    color: #202020;
+}
+
+.div_middlebox .check .rm
+{
+    font-weight: bold;
+    color: #202020;
+}
+
+.div_middlebox .check input
+{
+    margin-top: 2px;
+}
+
+.div_middlebox .errors, .div_middlebox #status
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff !important;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.div_middlebox .forget
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.div_middlebox .forget a, .div_middlebox .forget a:link, .div_middlebox .forget a:hover, .div_middlebox .forget a:active, .div_middlebox .forget a:visited
+{
+    text-decoration: none;
+    color: #0000ff;
+}
+
+.div_middlebox .forget a:hover
+{
+    text-decoration: underline;
+}
+
+.div_middlebox .signup
+{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #cccccc;
+    color: #202020;
+}
+
+.div_middlebox .signup .q
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.div_middlebox .signup2, .div_middlebox .signup2:link, .div_middlebox .signup2:hover, .div_middlebox .signup2:active, .div_middlebox .signup2:visited
+{
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+.div_sidebar
+{
+    /*margin-right: 10px;
+    text-align: center;*/
+    font-size: 15px;
+}
+
+.div_sidebar div img
+{
+    position: absolute;
+    display: block;
+}
+
+.div_sidebar div strong
+{
+    color: #a02226;
+    line-height: 70px;
+}
+
+.div_sidebar1
+{
+    padding-top: 10px;
+    text-align: left;
+    font-size: 15px;
+    color: #666666;
+}
+.clear{ clear: both;}
+
+.div_footer
+{
+    border-top: solid 1px #c0c0c0;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: normal;
+    color: #505050;
+}
+/*#divLang
+{
+    text-align: right;
+}*/
+.div_success
+{
+    font-family: Arial, sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.div_success .h
+{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div_success .b
+{
+    font-style: italic;
+}
+
+.div_success .r
+{
+    margin-top: 10px;
+}
+
+.div_success .r a, .div_success .r a:link, .div_success .r a:hover, .div_success .r a:active, .div_success .r a:visited
+{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000088;
+}
+
+.div_success .r a:hover
+{
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+.div_error
+{
+    font-family: Arial, sans-serif;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.div_error .h
+{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.div_error .b
+{
+    font-style: italic;
+}
+
+.div_error .r
+{
+    margin-top: 10px;
+}
+
+.div_error .r a, .div_error .r a:link, .div_error .r a:hover, .div_error .r a:active, .div_error .r a:visited
+{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #000088;
+}
+
+.div_error .r a:hover
+{
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+.smbutton
+{
+    /*border-radius: 8px;*/
+    /*background-image: url(images/btnbg.gif);
+    background-position: top;*/
+    background: #a02226;
+    font-weight: bold;
+    /*border: 1px solid #1d4253;*/
+    border:none;
+    outline:none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 8px 0 !important;
+    min-width: 80px;
+    /*width: 80px;*/
+    height: 32px;
+    width:212px;
+    padding: 0;
+    text-align: center;
+    font-size:16px;
+}
+.smbutton:hover
+{
+    /*background-image: url(images/btnbg2.gif);*/
+    background: #900a0e;
+}
+.loginInfo
+{
+    color: #FF3300;
+    font-weight: bold;
+}
+.loginInfoDetail
+{
+    color: #CCCCCC;
+    font-style: italic;
+    font-size: x-small;
+}
+.logo
+{
+    background-image: url(images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 70px;
+    margin-top: 85px;
+    margin-right: 10px;
+}
+#divLang a 
+{
+    text-decoration: none;
+}
+
+#divLang a img
+{
+    border: none;
+}
+#linkBarPdf{
+    color:grey;
+    font-size:14px;
+}
+#linkBarPdf:hover{
+    color:#a02226;
+    font-size:14px;
+    text-decoration:underline;
+}
+#mlinkBarPdf{
+    color:grey;
+    font-size:14px;
+}
+#mlinkBarPdf:hover{
+    color:#a02226;
+    font-size:14px;
+    text-decoration:underline;
+}
+#corpLinkBarPdf{
+    color:grey;
+    font-size:14px;
+}
+#corpLinkBarPdf:hover{
+    color:#a02226;
+    font-size:14px;
+    text-decoration:underline;
+}

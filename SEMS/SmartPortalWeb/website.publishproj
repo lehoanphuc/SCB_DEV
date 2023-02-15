@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0bb58238-38d3-4cc9-adf4-09793c4703f4}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/SmartPortalWeb</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SourceWebProject>
+    </SourceWebProject>
+    <SourceWebMetabasePath>
+    </SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLL\SmartFPortal.Control\SmartPortal.Control\SmartPortal.Control.csproj">
+      <Project>{55624F6F-DE93-4CF7-BB35-2562BA8E7ACF}</Project>
+      <Name>SmartPortal.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\SmartPortal.BLL\SmartPortal.BLL\SmartPortal.BLL.csproj">
+      <Project>{442683E5-5677-490B-A834-E64921BBF743}</Project>
+      <Name>SmartPortal.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\SmartPortal.DAL\SmartPortal.DAL.csproj">
+      <Project>{47948D00-DCDD-4E37-A806-6C8C8C8AAB95}</Project>
+      <Name>SmartPortal.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DLL\SmartPortal.Model\SmartPortal.Model\SmartPortal.Model.csproj">
+      <Project>{DB2A1FC9-ECA0-43FA-B512-7E33DD52C57D}</Project>
+      <Name>SmartPortal.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.Constant\SmartPortal.Constant.csproj">
+      <Project>{509FB54C-271E-4413-82D5-E2289944B4E4}</Project>
+      <Name>SmartPortal.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.Exception\SmartPortal.ExceptionCollection.csproj">
+      <Project>{BC9B53FD-3F72-4B92-BC0D-298A0F2A6F9F}</Project>
+      <Name>SmartPortal.ExceptionCollection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.IB\SmartPortal.IB.csproj">
+      <Project>{3FFF9CCF-EC40-4E0B-A3A7-5CADE986E247}</Project>
+      <Name>SmartPortal.IB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.RemotingServices\SmartPortal.RemotingServices.csproj">
+      <Project>{440C3487-12AF-45B1-B1BF-191A0BC56690}</Project>
+      <Name>SmartPortal.RemotingServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartPortal.SEMS\SmartPortal.SEMS.csproj">
+      <Project>{BBE03DDA-467A-46FF-BC65-AFB37BDB7C59}</Project>
+      <Name>SmartPortal.SEMS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

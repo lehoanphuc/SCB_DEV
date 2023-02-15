@@ -1,0 +1,63 @@
+﻿
+.card {
+    margin-bottom: 15px;
+}
+
+.card-img {
+    position: relative;
+}
+
+    .card-img img {
+        width: 100%;
+        border-radius:5px;
+    }
+
+.card-info {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+
+    .card-info .info {
+        color: #fff;
+    }
+.card-number {
+    margin: 10px 0px 0px 0px;
+}
+.card-number, .name-cus {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: #fff;
+    letter-spacing: 5px;
+}
+
+.name-cus {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.right-card {
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top:10px;
+}
+
+@media(min-width:768px) {
+    .right-card {
+        padding-top: 30px;
+    }
+}

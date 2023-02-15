@@ -1,0 +1,123 @@
+﻿.style1 {
+    width: 100%;
+}
+
+.divGetInfoCust {
+    background-color: #F8F8F8;
+    border: solid 1px #B9BFC1;
+    margin: 2px 5px 5px 5px;
+    padding: 0px 0px 0px 2px;
+}
+
+.divHeaderStyle {
+    background-color: #EAFAFF;
+    color: #003366;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+.gvHeader {
+    text-align: left;
+}
+
+.btn-radio.radio label {
+    margin-left: 20px;
+}
+
+#divCustHeader {
+    width: 100%;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+}
+
+#divError {
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.hightlight {
+    background-color: #EAFAFF;
+    color: #003366;
+}
+
+.nohightlight {
+    background-color: White;
+}
+
+.tblVDC {
+    background-color: #F8F8F8;
+    width: 100%;
+    border: solid 1px #B9BFC1;
+    margin-bottom: 5px;
+}
+
+.style2 {
+    height: 24px;
+}
+
+.content_table_4c {
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
+.nav.nav-tabs {
+    width: auto;
+    display: block;
+    float: none;
+    border-bottom: none;
+}
+
+    .nav.nav-tabs li {
+        width: auto;
+        border-top: none;
+        border-bottom: none;
+    }
+
+        .nav.nav-tabs li a {
+            height: auto;
+            width: auto;
+            background-image: none;
+            padding: 5px;
+            padding-left: 5px;
+            padding-top: 5px;
+            background-color: transparent;
+            border: 1px solid lightblue;
+            border-bottom: none;
+        }
+
+            /*.nav.nav-tabs li a:hover {
+                border: 1px solid #1e4f92;
+                border-bottom: none;
+            }*/
+
+        .nav.nav-tabs li.active a {
+            background: #1e4f92;
+            color: #fff;
+            font-weight: bold;
+        }
+
+.tree {
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.content_table_4c div div {
+    /*padding-left: 0;
+    padding-right: 0;*/
+}
+
+.tab-pane .content_table_4c {
+    margin-top: 10px;
+}
+
+.tab-pane .header-title {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+@media(max-width:767px) {
+}

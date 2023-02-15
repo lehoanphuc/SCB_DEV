@@ -1,0 +1,17 @@
+﻿.style1
+    {
+        width: 100%;
+        margin-top:15px;
+    }
+    
+    .rnTitle
+{
+	font-size:10pt;
+	font-weight:bold;
+	color:Gray;
+}
+.rnDate
+{
+	font-style:italic;
+	color:Gray;
+}

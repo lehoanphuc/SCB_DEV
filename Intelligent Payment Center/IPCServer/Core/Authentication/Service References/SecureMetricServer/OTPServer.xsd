@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.otp.sm/" targetNamespace="http://ws.otp.sm/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="addUser" type="tns:addUser" />
+  <xs:element name="addUserAdvanced" type="tns:addUserAdvanced" />
+  <xs:element name="addUserAdvancedResponse" type="tns:addUserAdvancedResponse" />
+  <xs:element name="addUserGroup" type="tns:addUserGroup" />
+  <xs:element name="addUserGroupResponse" type="tns:addUserGroupResponse" />
+  <xs:element name="addUserResponse" type="tns:addUserResponse" />
+  <xs:element name="auth" type="tns:auth" />
+  <xs:element name="authResponse" type="tns:authResponse" />
+  <xs:element name="bind" type="tns:bind" />
+  <xs:element name="bindResponse" type="tns:bindResponse" />
+  <xs:element name="delToken" type="tns:delToken" />
+  <xs:element name="delTokenResponse" type="tns:delTokenResponse" />
+  <xs:element name="delUser" type="tns:delUser" />
+  <xs:element name="delUserResponse" type="tns:delUserResponse" />
+  <xs:element name="getErrorMsg" type="tns:getErrorMsg" />
+  <xs:element name="getErrorMsgResponse" type="tns:getErrorMsgResponse" />
+  <xs:element name="getRetry" type="tns:getRetry" />
+  <xs:element name="getRetryResponse" type="tns:getRetryResponse" />
+  <xs:element name="getTokenEnable" type="tns:getTokenEnable" />
+  <xs:element name="getTokenEnableResponse" type="tns:getTokenEnableResponse" />
+  <xs:element name="getTokenLocked" type="tns:getTokenLocked" />
+  <xs:element name="getTokenLockedResponse" type="tns:getTokenLockedResponse" />
+  <xs:element name="getTokenLogout" type="tns:getTokenLogout" />
+  <xs:element name="getTokenLogoutResponse" type="tns:getTokenLogoutResponse" />
+  <xs:element name="getTokenLost" type="tns:getTokenLost" />
+  <xs:element name="getTokenLostResponse" type="tns:getTokenLostResponse" />
+  <xs:element name="getTokens" type="tns:getTokens" />
+  <xs:element name="getTokensResponse" type="tns:getTokensResponse" />
+  <xs:element name="getUserTokenInfoByToken" type="tns:getUserTokenInfoByToken" />
+  <xs:element name="getUserTokenInfoByTokenResponse" type="tns:getUserTokenInfoByTokenResponse" />
+  <xs:element name="getUserTokenInfoByUser" type="tns:getUserTokenInfoByUser" />
+  <xs:element name="getUserTokenInfoByUserResponse" type="tns:getUserTokenInfoByUserResponse" />
+  <xs:element name="initialize" type="tns:initialize" />
+  <xs:element name="initializeResponse" type="tns:initializeResponse" />
+  <xs:element name="ocraGenerateQS" type="tns:ocraGenerateQS" />
+  <xs:element name="ocraGenerateQSResponse" type="tns:ocraGenerateQSResponse" />
+  <xs:element name="ocraSign" type="tns:ocraSign" />
+  <xs:element name="ocraSignResponse" type="tns:ocraSignResponse" />
+  <xs:element name="ocraVerify" type="tns:ocraVerify" />
+  <xs:element name="ocraVerifyResponse" type="tns:ocraVerifyResponse" />
+  <xs:element name="postConstruct" type="tns:postConstruct" />
+  <xs:element name="postConstructResponse" type="tns:postConstructResponse" />
+  <xs:element name="preDestroy" type="tns:preDestroy" />
+  <xs:element name="preDestroyResponse" type="tns:preDestroyResponse" />
+  <xs:element name="setTokenEnable" type="tns:setTokenEnable" />
+  <xs:element name="setTokenEnableResponse" type="tns:setTokenEnableResponse" />
+  <xs:element name="setTokenLocked" type="tns:setTokenLocked" />
+  <xs:element name="setTokenLockedResponse" type="tns:setTokenLockedResponse" />
+  <xs:element name="setTokenLogout" type="tns:setTokenLogout" />
+  <xs:element name="setTokenLogoutResponse" type="tns:setTokenLogoutResponse" />
+  <xs:element name="setTokenLost" type="tns:setTokenLost" />
+  <xs:element name="setTokenLostResponse" type="tns:setTokenLostResponse" />
+  <xs:element name="sync" type="tns:sync" />
+  <xs:element name="syncResponse" type="tns:syncResponse" />
+  <xs:element name="terminal" type="tns:terminal" />
+  <xs:element name="terminalResponse" type="tns:terminalResponse" />
+  <xs:element name="tokenExist" type="tns:tokenExist" />
+  <xs:element name="tokenExistResponse" type="tns:tokenExistResponse" />
+  <xs:element name="transferToken" type="tns:transferToken" />
+  <xs:element name="transferTokenResponse" type="tns:transferTokenResponse" />
+  <xs:element name="unbind" type="tns:unbind" />
+  <xs:element name="unbindResponse" type="tns:unbindResponse" />
+  <xs:element name="userExist" type="tns:userExist" />
+  <xs:element name="userExistResponse" type="tns:userExistResponse" />
+  <xs:element name="version" type="tns:version" />
+  <xs:element name="versionResponse" type="tns:versionResponse" />
+  <xs:complexType name="terminal">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="terminalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sync">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strOTP1" type="xs:string" />
+      <xs:element minOccurs="0" name="strOTP2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="syncResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+      <xs:element name="flag" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLostResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="postConstruct">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="postConstructResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="initialize">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="initializeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraSign">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strTokenSn" type="xs:string" />
+      <xs:element minOccurs="0" name="strPin" type="xs:string" />
+      <xs:element minOccurs="0" name="strSignData" type="xs:string" />
+      <xs:element minOccurs="0" name="strSign" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraSignResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenEnable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenEnableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUserAdvanced">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element name="needPIN" type="xs:int" />
+      <xs:element minOccurs="0" name="PIN" type="xs:string" />
+      <xs:element minOccurs="0" name="strGroup" type="xs:string" />
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUserAdvancedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="transferToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser1" type="xs:string" />
+      <xs:element minOccurs="0" name="strUser2" type="xs:string" />
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="transferTokenResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="version">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="versionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenEnable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+      <xs:element name="flag" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenEnableResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUserGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strGroup" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUserGroupResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRetry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getRetryResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserTokenInfoByToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserTokenInfoByTokenResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:userToken" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="token" type="xs:string" />
+      <xs:element minOccurs="0" name="user" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element name="needPIN" type="xs:int" />
+      <xs:element minOccurs="0" name="PIN" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLostResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getErrorMsg">
+    <xs:sequence>
+      <xs:element name="nErrorId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getErrorMsgResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLocked">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+      <xs:element name="flag" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLockedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLogout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLogoutResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLogout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+      <xs:element name="flag" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setTokenLogoutResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraGenerateQS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraGenerateQSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="auth">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strPin" type="xs:string" />
+      <xs:element minOccurs="0" name="strOTP" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="authResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bind">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+      <xs:element name="isUse" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bindResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="preDestroy">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="preDestroyResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getUserTokenInfoByUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUserTokenInfoByUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:userToken" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLocked">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokenLockedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delToken">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="delTokenResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userExist">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userExistResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokens">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTokensResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:tokenInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tokenInfo" final="extension restriction">
+    <xs:sequence>
+      <xs:element name="algid" type="xs:int" />
+      <xs:element minOccurs="0" name="authnum" type="xs:string" />
+      <xs:element name="beginTime" type="xs:int" />
+      <xs:element minOccurs="0" name="crSuite" type="xs:string" />
+      <xs:element minOccurs="0" name="cvsSuite" type="xs:string" />
+      <xs:element name="driftCount" type="xs:int" />
+      <xs:element name="enable" type="xs:int" />
+      <xs:element minOccurs="0" name="exttype" type="xs:string" />
+      <xs:element name="intervalTime" type="xs:int" />
+      <xs:element name="locked" type="xs:int" />
+      <xs:element name="loginErrCnt" type="xs:int" />
+      <xs:element name="loginLockTime" type="xs:int" />
+      <xs:element name="logout" type="xs:int" />
+      <xs:element name="lost" type="xs:int" />
+      <xs:element minOccurs="0" name="ocraAuthnum" type="xs:string" />
+      <xs:element name="otplen" type="xs:int" />
+      <xs:element name="physicaltype" type="xs:int" />
+      <xs:element minOccurs="0" name="pubkeyfactor" type="xs:string" />
+      <xs:element minOccurs="0" name="signSuite" type="xs:string" />
+      <xs:element name="syncwnd" type="xs:int" />
+      <xs:element minOccurs="0" name="token" type="xs:string" />
+      <xs:element name="type" type="xs:int" />
+      <xs:element minOccurs="0" name="validdate" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraVerify">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strPin" type="xs:string" />
+      <xs:element minOccurs="0" name="strQs" type="xs:string" />
+      <xs:element minOccurs="0" name="strOTP" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ocraVerifyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tokenExist">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tokenExistResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unbind">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="strUser" type="xs:string" />
+      <xs:element minOccurs="0" name="strToken" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unbindResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
