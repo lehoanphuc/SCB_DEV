@@ -9282,6 +9282,12 @@
   <data name="chitietcbmnetfee" xml:space="preserve">
     <value>Detail of CBMNet Fee</value>
   </data>
+  <data name="interbankfee" xml:space="preserve">
+    <value>Domestic Fee</value>
+  </data>
+  <data name="detailinterbankfee" xml:space="preserve">
+    <value>Detail of Domestic Fee</value>
+  </data>
   <data name="capnhatphithanhcong" xml:space="preserve">
     <value>Update fee successfully</value>
   </data>

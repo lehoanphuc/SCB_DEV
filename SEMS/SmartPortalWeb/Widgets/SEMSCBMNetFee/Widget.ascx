@@ -6,7 +6,7 @@
     <ContentTemplate>
         <div class="subheader">
             <h1 class="subheader-title">
-                <%=Resources.labels.cbmnetfee%>
+                <%=Resources.labels.interbankfee%>
             </h1>
         </div>
         <div id="divError">
@@ -17,7 +17,7 @@
                 <div class="panel">
                     <div class="panel-hdr">
                         <h2>
-                            <%=Resources.labels.chitietcbmnetfee%>
+                            <%=Resources.labels.detailinterbankfee%>
                         </h2>
                     </div>
                     <div class="panel-container">
