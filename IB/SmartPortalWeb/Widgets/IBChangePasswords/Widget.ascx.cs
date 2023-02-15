@@ -55,6 +55,7 @@ public partial class Widgets_ChangePass_Widget : WidgetBase
             // goto EXIT;
             pnFocus.Visible = false;
             pnResult.Visible = true;
+
             gotologin(Resources.labels.thaydoimatkhauthanhcong);
         }
         catch (IPCException IPCex)
