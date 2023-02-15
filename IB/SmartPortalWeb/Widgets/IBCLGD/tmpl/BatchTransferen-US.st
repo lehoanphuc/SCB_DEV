@@ -10,7 +10,7 @@
 		<tr>
 			<td colspan="2" 
                 style="font-weight: bold;">
-             <img src='https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Siam_Commercial_Bank_%28logo%29.svg/345px-Siam_Commercial_Bank_%28logo%29.svg.png' style='height:70px;' /><br/>             
+             <img src='../../../Images/logoIB.png' style='height:70px;' /><br/>             
              <br/></td>
 		</tr>
 		<tr>
