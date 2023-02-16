@@ -96,7 +96,7 @@ public partial class Widgets_IBCorpUserLimit_Controls_Widget : WidgetBase
 
             for (int i = 1; i < ddlTrans.Items.Count; i++)
             {
-                DataTable temp = (DataTable)new SmartPortal.IB.Transactions().CheckExistTrancode(userid, ddlTrans.Items[i].Value, ccyid);
+                DataTable temp = (DataTable)new SmartPortal.IB.Transactions().CheckExistTrancode(userid, ddlTrans.Items[i].Value.ToString(), ccyid);
                 statusTrans.Add(ddlTrans.Items[i].Value, temp.Rows[0]["ERRORCODE"].ToString());
             }
         }

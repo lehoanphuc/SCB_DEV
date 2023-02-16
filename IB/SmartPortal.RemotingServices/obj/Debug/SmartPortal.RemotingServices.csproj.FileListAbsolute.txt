@@ -16,3 +16,11 @@ E:\SCB\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.cs
 E:\SCB\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CopyComplete
 E:\SCB\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.dll
 E:\SCB\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.dll.config
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\bin\Debug\ITransaction.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.pdb
