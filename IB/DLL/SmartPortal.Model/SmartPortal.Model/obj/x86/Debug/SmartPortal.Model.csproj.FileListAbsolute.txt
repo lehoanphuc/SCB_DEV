@@ -11,3 +11,9 @@ E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Mode
 E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.csproj.CoreCompileInputs.cache
 E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.dll
 E:\SCB\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll.config
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\bin\x86\Debug\SmartPortal.Model.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartPortal.Model\SmartPortal.Model\obj\x86\Debug\SmartPortal.Model.pdb

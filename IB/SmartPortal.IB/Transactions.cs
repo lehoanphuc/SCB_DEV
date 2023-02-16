@@ -1200,14 +1200,14 @@ namespace SmartPortal.IB
             p1.SqlDbType = SqlDbType.VarChar;
 
             SqlParameter p2 = new SqlParameter();
-            p1.ParameterName = "@TRANCODE";
-            p1.Value = trancode;
-            p1.SqlDbType = SqlDbType.VarChar;
+            p2.ParameterName = "@TRANCODE";
+            p2.Value = trancode;
+            p2.SqlDbType = SqlDbType.VarChar;
 
             SqlParameter p3 = new SqlParameter();
-            p1.ParameterName = "@CCYID";
-            p1.Value = ccyid;
-            p1.SqlDbType = SqlDbType.VarChar;
+            p3.ParameterName = "@CCYID";
+            p3.Value = ccyid;
+            p3.SqlDbType = SqlDbType.VarChar;
 
             iRead = DataAccess.GetFromDataTable("CHECKEXISTTRANCODE", p1, p2, p3);
 

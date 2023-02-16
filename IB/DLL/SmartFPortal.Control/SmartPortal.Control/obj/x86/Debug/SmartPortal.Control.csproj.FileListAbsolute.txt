@@ -26,3 +26,17 @@ E:\SCB\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal
 E:\SCB\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.csproj.CopyComplete
 E:\SCB\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.dll
 E:\SCB\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Control.dll.config
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Control.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Control.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.DAL.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Exception.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.DAL.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.DAL.dll.config
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Exception.pdb
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\bin\x86\Debug\SmartPortal.Exception.dll.config
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.csproj.AssemblyReference.cache
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.dll
+D:\lehoanphuc\SCB_DEV\IB\DLL\SmartFPortal.Control\SmartPortal.Control\obj\x86\Debug\SmartPortal.Control.pdb

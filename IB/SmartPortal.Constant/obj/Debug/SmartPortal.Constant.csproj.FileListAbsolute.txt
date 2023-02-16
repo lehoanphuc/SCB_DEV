@@ -26,3 +26,17 @@ E:\SCB\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.csproj.CoreCompile
 E:\SCB\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.csproj.CopyComplete
 E:\SCB\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.dll
 E:\SCB\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Constant.dll.config
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Constant.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Constant.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.DAL.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Exception.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.DAL.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.DAL.dll.config
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Exception.pdb
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\bin\Debug\SmartPortal.Exception.dll.config
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.csproj.AssemblyReference.cache
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.dll
+D:\lehoanphuc\SCB_DEV\IB\SmartPortal.Constant\obj\Debug\SmartPortal.Constant.pdb
