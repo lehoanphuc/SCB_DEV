@@ -74,7 +74,7 @@ public partial class Widgets_SEMSContractFee_Detail_Widget : WidgetBase
             string ID = GetParamsPage(IPC.ID)[0].Trim();
             string[] key = ID.Split('|');
             hdStatus.Value = key[4];
-            DataSet ds = new SmartPortal.SEMS.Fee().SearchContractFee(key[0], key[1], key[2], key[3], "", key[4],"",
+            DataSet ds = new SmartPortal.SEMS.Fee().SearchContractFee(key[0], key[1], key[2], key[3], "", key[4],
                 "", 0, 0, ref IPCERRORCODE, ref IPCERRORDESC);
             if (IPCERRORCODE == "0")
             {

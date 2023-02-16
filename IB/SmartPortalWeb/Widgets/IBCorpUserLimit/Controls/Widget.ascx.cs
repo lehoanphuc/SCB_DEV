@@ -91,6 +91,14 @@ public partial class Widgets_IBCorpUserLimit_Controls_Widget : WidgetBase
 
                 BindData();
             }
+            string userid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlTeller.SelectedValue.Trim());
+            string ccyid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlCCYID.SelectedValue.Trim());
+
+            for (int i = 1; i < ddlTrans.Items.Count; i++)
+            {
+                DataTable temp = (DataTable)new SmartPortal.IB.Transactions().CheckExistTrancode(userid, ddlTrans.Items[i].Value, ccyid);
+                statusTrans.Add(ddlTrans.Items[i].Value, temp.Rows[0]["ERRORCODE"].ToString());
+            }
         }
         catch (Exception ex)
         {
@@ -165,6 +173,8 @@ public partial class Widgets_IBCorpUserLimit_Controls_Widget : WidgetBase
         {
         }
     }
+
+    protected Hashtable statusTrans = new Hashtable();
     //asdasdasd
     protected void btsave_Click(object sender, EventArgs e)
     {
@@ -183,7 +193,21 @@ public partial class Widgets_IBCorpUserLimit_Controls_Widget : WidgetBase
             {
                 case "add":
                 case "ADD":
-                    new SmartPortal.IB.Transactions().InsertCorpUserLimit(userid, trancode, ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                    if(trancode == "ALL")
+                    {
+                        //CHECK EXIST TRANSACTION TYPE
+                        
+                        if (statusTrans.ContainsValue("0")) 
+                            goto Tranexistwhenaddall;
+                        for ( int i = 1; i < ddlTrans.Items.Count; i++)
+                        {
+                            new SmartPortal.IB.Transactions().InsertCorpUserLimit(userid, ddlTrans.Items[i].Value, ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                        }
+                    }
+                    else
+                    {
+                        new SmartPortal.IB.Transactions().InsertCorpUserLimit(userid, trancode, ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                    }
                     if (IPCERRORCODE == "0")
                     {
                         btsave.Visible = false;
@@ -239,6 +263,111 @@ public partial class Widgets_IBCorpUserLimit_Controls_Widget : WidgetBase
 
     EXIT:
         RedirectBackToMainPage();
+    Tranexistwhenaddall:
+        lblError.Text = "One of Transactions type has existed. Please choose option below !";
+        btnOverwrite.Visible = true;
+        btnAddMissTrans.Visible = true;
+        btnCancel.Visible = true;
+
+        return;
+    }
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        RedirectBackToMainPage();
+    }
+
+    protected void btnOverwrite_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string userid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlTeller.SelectedValue.Trim());
+            string trancode = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlTrans.SelectedValue.Trim());
+            string ccyid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlCCYID.SelectedValue.Trim());
+            string limit = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.FormatMoneyInput(txtlimit.Text.Trim(), ddlCCYID.SelectedValue.Trim()));
+            string limittotal = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.FormatMoneyInput(txttotallimit.Text.Trim(), ddlCCYID.SelectedValue.Trim()));
+            string countlimit = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.IsInt(txtcountlimit.Text.Trim()).ToString());
+
+            string username = HttpContext.Current.Session["userName"].ToString();
+            foreach (DictionaryEntry de in statusTrans)
+            {
+                if (de.Value.ToString() == "1")
+                {
+                    new SmartPortal.IB.Transactions().InsertCorpUserLimit(userid, de.Key.ToString(), ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                }
+                else if (de.Value.ToString() == "0")
+                {
+                    new SmartPortal.IB.Transactions().UpdateCorpUserLimit(userid, de.Key.ToString(), ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                }
+            }
+            btsave.Visible = false;
+            ddlTrans.Enabled = false;
+            txtlimit.Enabled = false;
+            txttotallimit.Enabled = false;
+            txtcountlimit.Enabled = false;
+            ddlCCYID.Enabled = false;
+            btnew.Visible = true;
+            lblError.Text = Resources.labels.themlimitthanhcong;
+            btnOverwrite.Visible = false;
+            btnAddMissTrans.Visible = false;
+            btnCancel.Visible = false;
+        }
+        catch (IPCException IPCex)
+        {
+            SmartPortal.Common.Log.RaiseError(IPCex.Message, this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, IPCex.Message, Request.Url.Query);
+            SmartPortal.Common.Log.GoToIBErrorPage(IPCex.Message, Request.Url.Query);
+
+        }
+        catch (Exception ex)
+        {
+            SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], "Widgets_IBCorpUserLimit_Controls_Widget", "btsave_Click", ex.Message, Request.Url.Query);
+            SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
+        }
+
+    }
+
+    protected void btnAddMissTrans_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string username = HttpContext.Current.Session["userName"].ToString();
+            string userid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlTeller.SelectedValue.Trim());
+            //     string trancode = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlTrans.SelectedValue.Trim());
+            string ccyid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlCCYID.SelectedValue.Trim());
+            string limit = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.FormatMoneyInput(txtlimit.Text.Trim(), ddlCCYID.SelectedValue.Trim()));
+            string limittotal = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.FormatMoneyInput(txttotallimit.Text.Trim(), ddlCCYID.SelectedValue.Trim()));
+            string countlimit = SmartPortal.Common.Utilities.Utility.KillSqlInjection(SmartPortal.Common.Utilities.Utility.IsInt(txtcountlimit.Text.Trim()).ToString());
+            foreach (DictionaryEntry de in statusTrans)
+            {
+                if (de.Value.ToString() == "1")
+                {
+                    new SmartPortal.IB.Transactions().InsertCorpUserLimit(userid, de.Key.ToString(), ccyid, limit, countlimit, limittotal, username, ref IPCERRORCODE, ref IPCERRORDESC);
+                }
+            }
+            btsave.Visible = false;
+            ddlTrans.Enabled = false;
+            txtlimit.Enabled = false;
+            txttotallimit.Enabled = false;
+            txtcountlimit.Enabled = false;
+            ddlCCYID.Enabled = false;
+            btnew.Visible = true;
+            lblError.Text = Resources.labels.themlimitthanhcong;
+            btnOverwrite.Visible = false;
+            btnAddMissTrans.Visible = false;
+            btnCancel.Visible = false;
+
+        }
+        catch (IPCException IPCex)
+        {
+            SmartPortal.Common.Log.RaiseError(IPCex.Message, this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, IPCex.Message, Request.Url.Query);
+            SmartPortal.Common.Log.GoToIBErrorPage(IPCex.Message, Request.Url.Query);
+
+        }
+        catch (Exception ex)
+        {
+            SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], "Widgets_IBCorpUserLimit_Controls_Widget", "btsave_Click", ex.Message, Request.Url.Query);
+            SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
+        }
+
     }
     protected void btnew_Click(object sender, EventArgs e)
     {
