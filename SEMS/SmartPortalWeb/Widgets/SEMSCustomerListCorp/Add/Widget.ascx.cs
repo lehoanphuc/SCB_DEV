@@ -4389,7 +4389,7 @@ public partial class Widgets_SEMSCustomerListCorp_Add_Widget : WidgetBase
                             if (accountMBTablenuq.Rows.Count != 0)
                             {
                                 if (accountMBTablenuq.Rows[0]["ROLEID"].ToString().Trim() != "")
-                                //{
+                                {
                                 //    stnuq.Append("<tr>");
                                 //    stnuq.Append("<td colspan='4'>");
                                 //    stnuq.Append("<br/>");
@@ -5355,7 +5355,7 @@ public partial class Widgets_SEMSCustomerListCorp_Add_Widget : WidgetBase
                             if (accountMBTablel2.Rows.Count != 0)
                             {
                                 if (accountMBTablel2.Rows[0]["ROLEID"].ToString().Trim() != "")
-                                //{
+                                {
                                 //    stl2s.Append("<tr>");
                                 //    stl2s.Append("<td colspan='4'>");
                                 //    stl2s.Append("<br/>");

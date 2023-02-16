@@ -11,7 +11,9 @@
             <img alt="" src="Images/WidgetImage/ajaxloader.gif" style="width: 16px; height: 16px;" />
         </ProgressTemplate>
     </asp:UpdateProgress>
+    
 </div>
+
 <div class="al">
     <asp:Label ID="Label7" runat="server"
         Text="<%$ Resources:labels, thietlaphanmucthuchiengiaodich %>"></asp:Label><br />
@@ -22,6 +24,14 @@
         <div class="divAddInfoPro">
             <div style="text-align: center;">
                 <asp:Label ID="lblError" runat="server" Text="" Font-Bold="true" ForeColor="Red"></asp:Label>
+                <div style="text-align: center; margin-top: 10px;">
+                    <asp:Button Visible="false" ID="btnOverwrite" CssClass="btn btn-primary" runat="server" Text="Overwrite Transaction" 
+                        OnClick="btnOverwrite_Click" />
+                    <asp:Button Visible="false" ID="btnAddMissTrans" runat="server" CssClass="btn btn-primary" Text="Add miss Transaction"
+                        OnClientClick="return validate();" OnClick="btnAddMissTrans_Click" />
+                    <asp:Button Visible="false" ID="btnCancel" runat="server" CssClass="btn btn-warning" Text="Cancel"
+                        OnClick="btnCancel_Click" />
+                </div>
             </div>
             <asp:Panel ID="pnAdd" runat="server">
                 <figure>

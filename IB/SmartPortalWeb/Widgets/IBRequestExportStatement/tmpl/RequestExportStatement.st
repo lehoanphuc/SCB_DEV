@@ -10,7 +10,7 @@
 		<tr>
 			<td colspan="2" 
                 style="font-weight: bold;">
-           <img src="https://ib.hellomoney.com.la:9004/Images/logo.png" /><br/>             
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Siam_Commercial_Bank_%28logo%29.svg/345px-Siam_Commercial_Bank_%28logo%29.svg.png" /><br/>             
              <br/></td>
 		</tr>
 		<tr>
@@ -91,7 +91,7 @@
 			<td colspan="2">
 				<br/>
 				<hr/>
-				<p><a href='https://www.phongsavanhbank.com/' target='blank'>https://www.phongsavanhbank.com/</a></p>
+				<p><a href='https://www.scb.co.th/en/personal-banking.html' target='blank'>www.scb.co.th/en/personal-banking</a></p>
 				<span style='font-weight:bold;'>
 				Thank you for using services of PSV Bank!
 				</span>
