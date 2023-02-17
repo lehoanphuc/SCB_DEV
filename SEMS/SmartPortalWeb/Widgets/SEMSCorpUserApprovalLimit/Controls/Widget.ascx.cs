@@ -3,6 +3,7 @@ using SmartPortal.Constant;
 using SmartPortal.ExceptionCollection;
 using SmartPortal.SEMS;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -15,6 +16,7 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
     string ACTION = string.Empty;
     string IPCERRORCODE = string.Empty;
     string IPCERRORDESC = string.Empty;
+    protected Hashtable statusTrans = new Hashtable();
     private string USERID
     {
         get
@@ -51,6 +53,14 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
                 GridViewPaging.Visible = false;
                 divResult.Visible = false;
                 GridViewPaging.pagingClickArgs += new EventHandler(GridViewPaging_Click);
+            }
+            string userid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(txtUserIDStep2.Text.Trim());
+            string ccyid = SmartPortal.Common.Utilities.Utility.KillSqlInjection(ddlCcyid.SelectedValue.Trim());
+
+            for (int i = 1; i < ddlTransType.Items.Count; i++)
+            {
+                DataTable temp = (DataTable)new SmartPortal.SEMS.Transactions().CheckExistTrancode(userid, ddlTransType.Items[i].Value.ToString(), ccyid);
+                statusTrans.Add(ddlTransType.Items[i].Value, temp.Rows[0]["ERRORCODE"].ToString());
             }
         }
         catch (Exception ex)
@@ -297,13 +307,27 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
 
                     foreach (DataRow row in dt.Rows)
                     {
-                        dtTemp.Rows.Add(row[IPC.USERID], row[IPC.TRANCODE], row[IPC.CCYID], row[IPC.APPROVALLIMIT], row[IPC.TOTALLIMITDAY], row[IPC.COUNTLIMIT], row[IPC.USERCREATED], row[IPC.DATECREATED], row[IPC.SOURCEID]);
+                        if(ddlTransType.Text == "ALL")
+                        {
+                            //CHECK EXIST TRANSACTION TYPE
+
+                            if (statusTrans.ContainsValue("0"))
+                                goto Tranexistwhenaddall;
+                            for ( int i =1; i < ddlTransType.Items.Count; i++)
+                            {
+                                dtTemp.Rows.Add(row[IPC.USERID], ddlTransType.Items[i].Value, row[IPC.CCYID], row[IPC.APPROVALLIMIT], row[IPC.TOTALLIMITDAY], row[IPC.COUNTLIMIT], row[IPC.USERCREATED], row[IPC.DATECREATED], row[IPC.SOURCEID]);
+                            }
+                        }
+                        else
+                        {
+                            dtTemp.Rows.Add(row[IPC.USERID], row[IPC.TRANCODE], row[IPC.CCYID], row[IPC.APPROVALLIMIT], row[IPC.TOTALLIMITDAY], row[IPC.COUNTLIMIT], row[IPC.USERCREATED], row[IPC.DATECREATED], row[IPC.SOURCEID]);
+                        }
                     }
                     try
                     {
                         if (dtTemp.Rows.Count > 0)
                         {
-                            DataSet dataResult = new UserApprovalLimit().AddCMUserApprovalLimit(dtTemp, ref IPCERRORCODE, ref IPCERRORDESC);
+                            new UserApprovalLimit().AddCMUserApprovalLimit(dtTemp, ref IPCERRORCODE, ref IPCERRORDESC);
                             if (IPCERRORCODE.Equals("0"))
                             {
                                 lblError.Text = Resources.labels.themmoithanhcong;
@@ -374,13 +398,22 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
             SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.ToString(), Request.Url.Query);
             SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
         }
+    Tranexistwhenaddall:
+        lblError.Text = "One of Transactions type has existed. Please choose option below !";
+        btnOverwrite.Visible = true;
+        btnAddMissTrans.Visible = true;
+        btnCancel.Visible = true;
+        return;
     }
-
     protected void btnBack_OnClick(object sender, EventArgs e)
     {
         RedirectBackToMainPage();
     }
-
+    protected void btnCancel_Click(object sender, EventArgs e)
+    {
+        RedirectBackToMainPage();
+    }
+    
     protected void btnAdd_Click(object sender, EventArgs e)
     {
         try
@@ -671,5 +704,80 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
             SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.ToString(), Request.Url.Query);
             SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
         }
+    }
+
+
+    protected void btnOverwrite_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            DataTable dt = (DataTable)ViewState["CurrentTable1"];
+            DataTable dtTemp = new DataTable();
+
+            dtTemp.Columns.AddRange(new DataColumn[] { new DataColumn(IPC.USERID), new DataColumn(IPC.TRANCODE), new DataColumn(IPC.CCYID), new DataColumn(IPC.APPROVALLIMIT, typeof(double)), new DataColumn(IPC.TOTALLIMITDAY, typeof(double)), new DataColumn(IPC.COUNTLIMIT, typeof(int)), new DataColumn(IPC.USERCREATED), new DataColumn(IPC.DATECREATED), new DataColumn(IPC.SOURCEID) });
+
+            foreach (DictionaryEntry de in statusTrans)
+            {
+                if (de.Value.ToString() == "1")
+                {
+                    dtTemp.Rows.Add(dt.Rows[0][IPC.USERID], de.Key, dt.Rows[0][IPC.CCYID], dt.Rows[0][IPC.APPROVALLIMIT], dt.Rows[0][IPC.TOTALLIMITDAY], dt.Rows[0][IPC.COUNTLIMIT], dt.Rows[0][IPC.USERCREATED], dt.Rows[0][IPC.DATECREATED], dt.Rows[0][IPC.SOURCEID]);
+
+                }
+                else if (de.Value.ToString() == "0")
+                {
+                    new UserApprovalLimit().UpdateUserApprovalLimit(dt.Rows[0][IPC.USERID].ToString(), de.Key.ToString(), dt.Rows[0][IPC.CCYID].ToString(),double.Parse( dt.Rows[0][IPC.APPROVALLIMIT].ToString()),double.Parse (dt.Rows[0][IPC.TOTALLIMITDAY].ToString()),int.Parse( dt.Rows[0][IPC.COUNTLIMIT].ToString()), dt.Rows[0][IPC.USERCREATED].ToString(), DateTime.Now.ToString("MM/dd/yyyy"), ref IPCERRORCODE, ref IPCERRORDESC);
+                }
+            }
+            new UserApprovalLimit().AddCMUserApprovalLimit(dtTemp, ref IPCERRORCODE, ref IPCERRORDESC);
+            btnSave.Visible = false;
+            btnPrint.Visible = true;
+            PrintData();
+            pnAdd.Enabled = false;
+            gvUserLimit.Columns[7].Visible = false;
+            lblError.Text = Resources.labels.suathanhcong;
+            btnOverwrite.Visible = false;
+            btnAddMissTrans.Visible = false;
+            btnCancel.Visible = false;
+        }
+        catch (Exception ex)
+        {
+            SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.ToString(), Request.Url.Query);
+            SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
+        }
+    }
+
+    protected void btnAddMissTrans_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            DataTable dt = (DataTable)ViewState["CurrentTable1"];
+            DataTable dtTemp = new DataTable();
+
+            dtTemp.Columns.AddRange(new DataColumn[] { new DataColumn(IPC.USERID), new DataColumn(IPC.TRANCODE), new DataColumn(IPC.CCYID), new DataColumn(IPC.APPROVALLIMIT, typeof(double)), new DataColumn(IPC.TOTALLIMITDAY, typeof(double)), new DataColumn(IPC.COUNTLIMIT, typeof(int)), new DataColumn(IPC.USERCREATED), new DataColumn(IPC.DATECREATED), new DataColumn(IPC.SOURCEID) });
+            foreach (DictionaryEntry de in statusTrans)
+            {
+                if (de.Value.ToString() == "1")
+                {
+                    dtTemp.Rows.Add(dt.Rows[0][IPC.USERID], de.Key, dt.Rows[0][IPC.CCYID], dt.Rows[0][IPC.APPROVALLIMIT], dt.Rows[0][IPC.TOTALLIMITDAY], dt.Rows[0][IPC.COUNTLIMIT], dt.Rows[0][IPC.USERCREATED], dt.Rows[0][IPC.DATECREATED], dt.Rows[0][IPC.SOURCEID]);
+                }
+            }
+            new UserApprovalLimit().AddCMUserApprovalLimit(dtTemp, ref IPCERRORCODE, ref IPCERRORDESC);
+            btnSave.Visible = false;
+            btnPrint.Visible = true;
+            PrintData();
+            pnAdd.Enabled = false;
+            gvUserLimit.Columns[7].Visible = false;
+            lblError.Text = Resources.labels.suathanhcong;
+            btnOverwrite.Visible = false;
+            btnAddMissTrans.Visible = false;
+            btnCancel.Visible = false;
+
+        }
+        catch (Exception ex)
+        {
+            SmartPortal.Common.Log.RaiseError(System.Configuration.ConfigurationManager.AppSettings["sysec"], this.GetType().BaseType.Name, System.Reflection.MethodBase.GetCurrentMethod().Name, ex.ToString(), Request.Url.Query);
+            SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
+        }
+
     }
 }

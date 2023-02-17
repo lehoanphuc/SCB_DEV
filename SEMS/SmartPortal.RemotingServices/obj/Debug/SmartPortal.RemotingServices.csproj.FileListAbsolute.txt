@@ -34,3 +34,15 @@ E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.Re
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CopyComplete
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.dll
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.dll.config
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\SmartPortal.RemotingServices.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\BouncyCastle.Crypto.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\itextsharp.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\ITransaction.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\bin\Debug\itextsharp.xml
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.AssemblyReference.cache
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.RemotingServices\obj\Debug\SmartPortal.RemotingServices.pdb

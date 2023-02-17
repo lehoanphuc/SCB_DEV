@@ -349,7 +349,36 @@ namespace SmartPortal.SEMS
         }
         #endregion
 
+        #region CHECK EXIST TRANSACTION TYPE
+        public DataTable CheckExistTrancode(string userid, string trancode, string ccyid)
+        {
+            DataTable iRead;
 
+            SqlParameter p1 = new SqlParameter();
+            p1.ParameterName = "@USERID";
+            p1.Value = userid;
+            p1.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p2 = new SqlParameter();
+            p2.ParameterName = "@TRANCODE";
+            p2.Value = trancode;
+            p2.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p3 = new SqlParameter();
+            p3.ParameterName = "@CCYID";
+            p3.Value = ccyid;
+            p3.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p4 = new SqlParameter();
+            p4.ParameterName = "@TYPE";
+            p4.Value = "SEMS";
+            p4.SqlDbType = SqlDbType.VarChar;
+
+            iRead = DataAccess.GetFromDataTable("CHECKEXISTTRANCODE", p1, p2, p3, p4);
+
+            return iRead;
+        }
+        #endregion
         #region GET TRAN BY TRANID
         public DataSet GetTranByTranID(string tranID, ref string errorCode, ref string errorDesc)
         {

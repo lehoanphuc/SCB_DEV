@@ -356,7 +356,7 @@ public partial class Widgets_SEMSCorpUserLimit_Controls_Widget : WidgetBase
             SmartPortal.Common.Log.GoToErrorPage(System.Configuration.ConfigurationManager.AppSettings["sysec"], Request.Url.Query);
         }
     }
-
+    
     protected void btnBack_OnClick(object sender, EventArgs e)
     {
         RedirectBackToMainPage();
