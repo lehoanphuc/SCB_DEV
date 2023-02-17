@@ -31,3 +31,14 @@ E:\SCB\GITHUB\SCB-DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\Sma
 E:\SCB\GITHUB\SCB-DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.csproj.CopyComplete
 E:\SCB\GITHUB\SCB-DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.dll
 E:\SCB\GITHUB\SCB-DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\SmartPortal.Model.dll.config
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\SmartPortal.Model.dll
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\SmartPortal.Model.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\BouncyCastle.Crypto.dll
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\itextsharp.dll
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\bin\Debug\itextsharp.xml
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.csproj.AssemblyReference.cache
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.dll
+D:\lehoanphuc\SCB_DEV\SEMS\DLL\SmartPortal.Model\SmartPortal.Model\obj\Debug\SmartPortal.Model.pdb

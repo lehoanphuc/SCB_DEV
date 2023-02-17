@@ -30,3 +30,14 @@ E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.Exception
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.CopyComplete
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.dll
 E:\SCB\GITHUB\SCB-DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll.config
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\SmartPortal.Exception.pdb
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\BouncyCastle.Crypto.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\itextsharp.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\bin\Debug\itextsharp.xml
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.AssemblyReference.cache
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.CoreCompileInputs.cache
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.ExceptionCollection.csproj.CopyComplete
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.dll
+D:\lehoanphuc\SCB_DEV\SEMS\SmartPortal.Exception\obj\Debug\SmartPortal.Exception.pdb

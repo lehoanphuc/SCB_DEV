@@ -1190,7 +1190,7 @@ namespace SmartPortal.IB
         }
         #endregion
 
-        public DataTable CheckExistTrancode(string userid, string trancode, string ccyid)
+        public DataTable CheckExistTrancode(string userid, string trancode, string ccyid )
         {
             DataTable iRead;
 
@@ -1209,7 +1209,12 @@ namespace SmartPortal.IB
             p3.Value = ccyid;
             p3.SqlDbType = SqlDbType.VarChar;
 
-            iRead = DataAccess.GetFromDataTable("CHECKEXISTTRANCODE", p1, p2, p3);
+            SqlParameter p4 = new SqlParameter();
+            p4.ParameterName = "@TYPE";
+            p4.Value ="IB";
+            p4.SqlDbType = SqlDbType.VarChar;
+
+            iRead = DataAccess.GetFromDataTable("CHECKEXISTTRANCODE", p1, p2, p3, p4);
 
             return iRead;
         }
