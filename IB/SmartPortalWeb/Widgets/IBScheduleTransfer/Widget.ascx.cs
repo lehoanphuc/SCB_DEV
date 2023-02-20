@@ -116,7 +116,7 @@ public partial class Widgets_IBScheduleTransfer_Widget : WidgetBase
                 ddlTransferType.DataTextField = "PAGETITLE";
                 ddlTransferType.DataValueField = "TRANCODE";
                 ddlTransferType.DataBind();
-                ddlTransferType.Items.Remove(ddlTransferType.Items.FindByValue("IBINTERBANKTRANSFER"));
+                //ddlTransferType.Items.Remove(ddlTransferType.Items.FindByValue("IBINTERBANKTRANSFER"));
                 //Load ddlsenderaccount
                 DataSet ds = new DataSet();
                 //DataSet dsReceiverList = new DataSet();

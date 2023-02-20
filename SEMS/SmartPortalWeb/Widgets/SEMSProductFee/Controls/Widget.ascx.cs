@@ -37,7 +37,6 @@ public partial class Widgets_SEMSProductFee_Controls_Widget : WidgetBase
                 BindData();
                 //ddlProductType_OnSelectedIndexChanged(null, null);
             }
-      
         }
         catch (Exception ex)
         {
