@@ -59,7 +59,7 @@ public partial class Widgets_SEMSCorpUserApprovalLimit_Controls_Widget : WidgetB
 
             for (int i = 1; i < ddlTransType.Items.Count; i++)
             {
-                DataTable temp = (DataTable)new SmartPortal.SEMS.Transactions().CheckExistTrancode(userid, ddlTransType.Items[i].Value.ToString(), ccyid);
+                DataTable temp = (DataTable)new SmartPortal.SEMS.Transactions().CheckExistTrancode(userid, ddlTransType.Items[i].Value.ToString(), ccyid, "SEMS");
                 statusTrans.Add(ddlTransType.Items[i].Value, temp.Rows[0]["ERRORCODE"].ToString());
             }
         }
