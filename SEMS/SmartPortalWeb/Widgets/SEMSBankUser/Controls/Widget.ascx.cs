@@ -356,24 +356,47 @@ public partial class Widgets_SEMSBankUser_Controls_Widget : WidgetBase
                 break;
         }
 
-        CheckBox cbRoleName;
+        CheckBox cbRoleName, cbRoleNameTemp;
         HiddenField hdRole;
         UserInRole UIR = new UserInRole();
         foreach (RepeaterItem item in rptRole.Items)
         {
             cbRoleName = item.FindControl("cbRole") as CheckBox;
             hdRole = item.FindControl("hdRole") as HiddenField;
+            cbRoleNameTemp = item.FindControl("cbRoleTemp") as CheckBox;
             if (cbRoleName.Checked == true)
             {
-                UIR.Insert(Utility.IsInt(hdRole.Value), Utility.KillSqlInjection(txtUserName.Text.Trim()), true);
+                if (!cbRoleNameTemp.Checked)
+                {
+                    UIR.Insert(Utility.IsInt(hdRole.Value), Utility.KillSqlInjection(txtUserName.Text.Trim()), true);
+                    SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["USERINROLE"], 
+                        System.Configuration.ConfigurationManager.AppSettings["INSERT"], 
+                        Request.Url.ToString(), Session["userName"].ToString(),
+                        Request.UserHostAddress, 
+                        System.Configuration.ConfigurationManager.AppSettings["TBLUSERINROLE"], 
+                        System.Configuration.ConfigurationManager.AppSettings["ROLEID"], 
+                        IPC.NEW,
+                        cbRoleName.Text);
+                }
             }
             else
             {
-                UIR.Insert(Utility.IsInt(hdRole.Value), Utility.KillSqlInjection(txtUserName.Text.Trim()), false);
+                if (cbRoleNameTemp.Checked)
+                {
+                    UIR.Insert(Utility.IsInt(hdRole.Value), Utility.KillSqlInjection(txtUserName.Text.Trim()), false);
+                    SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["USERINROLE"], 
+                        System.Configuration.ConfigurationManager.AppSettings["INSERT"], 
+                        Request.Url.ToString(), 
+                        Session["userName"].ToString(),
+                        Request.UserHostAddress, 
+                        System.Configuration.ConfigurationManager.AppSettings["TBLUSERINROLE"], 
+                        System.Configuration.ConfigurationManager.AppSettings["ROLEID"], 
+                        IPC.DELETE,
+                        cbRoleName.Text);
+                }
             }
-            SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["USERINROLE"], System.Configuration.ConfigurationManager.AppSettings["INSERT"], Request.Url.ToString(), Session["userName"].ToString(), Request.UserHostAddress, System.Configuration.ConfigurationManager.AppSettings["TBLUSERINROLE"], System.Configuration.ConfigurationManager.AppSettings["USERNAME"], userName, Utility.KillSqlInjection(txtUserName.Text.Trim()));
 
-            SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["USERINROLE"], System.Configuration.ConfigurationManager.AppSettings["INSERT"], Request.Url.ToString(), Session["userName"].ToString(), Request.UserHostAddress, System.Configuration.ConfigurationManager.AppSettings["TBLUSERINROLE"], System.Configuration.ConfigurationManager.AppSettings["ROLEID"], "", hdRole.Value);
+            
         }
     }
     protected void btCancel_Click(object sender, EventArgs e)

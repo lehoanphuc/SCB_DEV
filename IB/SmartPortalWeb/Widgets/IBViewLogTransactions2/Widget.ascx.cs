@@ -159,7 +159,7 @@ public partial class Widgets_IBViewLogTransactions_Widget : WidgetBase
             {
                 case IPC.ACTIONPAGE.DETAILS:
                     if (!IBCheckPermitPageAction(commandName)) return;
-                    RedirectToActionPage(IPC.ACTIONPAGE.DETAILS, "&" + SmartPortal.Constant.IPC.IPCTRANSID + "=" + commandArg, false);
+                    RedirectToActionPage(IPC.ACTIONPAGE.DETAILS, "&" + SmartPortal.Constant.IPC.IPCTRANSID + "=" + commandArg + "&b=s", false);
                     break;
                 case IPC.TRANSTATUS.CANCEL:
                     if (!IBCheckPermitPageAction(IPC.ACTIONPAGE.DETAILS)) return;

@@ -223,25 +223,25 @@ public partial class Widgets_IBRequestExportStatement_Widget : WidgetBase
             {
                 lblError.Text = "Can't send mail, please try again later!";
             }
-            //Antlr3.ST.StringTemplate tmpl = new Antlr3.ST.StringTemplate();
-            //tmpl = SmartPortal.Common.ST.GetStringTemplate("IBRequestExportStatement", "RequestExportStatement");
-            //tmpl.SetAttribute("tranDate", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
-            //tmpl.SetAttribute("senderName", custname);
-            //tmpl.SetAttribute("senderAccount", accno);
-            //tmpl.SetAttribute("userid", userid);
-            //tmpl.SetAttribute("serialno", serialno);
-            //tmpl.SetAttribute("version", version);
-            //tmpl.SetAttribute("purpose", purpose);
-            //tmpl.SetAttribute("phone", phone);
-            //tmpl.SetAttribute("detail", detail);
-            //tmpl.SetAttribute("email", email);
-            //tmpl.SetAttribute("fromdate", fromdate);
-            //tmpl.SetAttribute("todate", todate);
-            //if (ds != null && ds.Tables[0].Rows.Count > 0)
-            //{
-            //    SmartPortal.Common.EmailHelper.SendMailMessageAsync(ConfigurationManager.AppSettings["contractapprovemailfrom"], ds.Tables[0].Rows[0]["VARVALUE"].ToString(), ConfigurationManager.AppSettings["contractapprovemailtitle"], tmpl.ToString());
+            Antlr3.ST.StringTemplate tmpl = new Antlr3.ST.StringTemplate();
+            tmpl = SmartPortal.Common.ST.GetStringTemplate("IBRequestExportStatement", "RequestExportStatement");
+            tmpl.SetAttribute("tranDate", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+            tmpl.SetAttribute("senderName", custname);
+            tmpl.SetAttribute("senderAccount", accno);
+            tmpl.SetAttribute("userid", userid);
+            tmpl.SetAttribute("serialno", serialno);
+            tmpl.SetAttribute("version", version);
+            tmpl.SetAttribute("purpose", purpose);
+            tmpl.SetAttribute("phone", phone);
+            tmpl.SetAttribute("detail", detail);
+            tmpl.SetAttribute("email", email);
+            tmpl.SetAttribute("fromdate", fromdate);
+            tmpl.SetAttribute("todate", todate);
+            if (ds != null && ds.Tables[0].Rows.Count > 0)
+            {
+                SmartPortal.Common.EmailHelper.SendMailMessageAsync(ConfigurationManager.AppSettings["contractapprovemailfrom"], ds.Tables[0].Rows[0]["VARVALUE"].ToString(), ConfigurationManager.AppSettings["contractapprovemailtitle"], tmpl.ToString());
 
-            //}
+            }
             //else
 
         }

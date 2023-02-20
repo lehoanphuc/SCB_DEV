@@ -153,6 +153,9 @@
   <data name="addcategory" xml:space="preserve">
     <value>Add Category</value>
   </data>
+	<data name="moneytranschannel" xml:space="preserve">
+    <value>Money transfer channel</value>
+  </data>
   <data name="addgroup" xml:space="preserve">
     <value>Add Group</value>
   </data>
@@ -2570,6 +2573,9 @@
   </data>
   <data name="nhatkygiaodich" xml:space="preserve">
     <value>Transaction history</value>
+  </data>
+	<data name="nhatkyphanquyen" xml:space="preserve">
+    <value>Authorization history</value>
   </data>
   <data name="listWaitingTransaction" xml:space="preserve">
     <value>List of waiting approval transaction</value>
@@ -5612,6 +5618,9 @@
   </data>
   <data name="becauseoffirstlogin" xml:space="preserve">
     <value>Because of first login</value>
+  </data>
+	<data name="userlog" xml:space="preserve">
+    <value>User Log</value>
   </data>
   <data name="capnhat" xml:space="preserve">
     <value>Update</value>
@@ -9277,10 +9286,10 @@
     <value>Edit other bank branch successfully</value>
   </data>
   <data name="cbmnetfee" xml:space="preserve">
-    <value>CBMNet Fee</value>
+    <value>Domestic Fee</value>
   </data>
   <data name="chitietcbmnetfee" xml:space="preserve">
-    <value>Detail of CBMNet Fee</value>
+    <value>Detail of Domestic Fee</value>
   </data>
   <data name="capnhatphithanhcong" xml:space="preserve">
     <value>Update fee successfully</value>

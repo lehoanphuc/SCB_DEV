@@ -102,7 +102,7 @@ public partial class Widgets_SEMSContractFee_Widget : WidgetBase
             ltrError.Text = string.Empty;
             if (Convert.ToInt32(((HiddenField)GridViewPaging.FindControl("TotalRows")).Value) < gvContractFee.PageIndex * gvContractFee.PageSize) return;
             DataSet dsContractFee = new DataSet();
-            dsContractFee = new SmartPortal.SEMS.Fee().SearchContractFee(Utility.KillSqlInjection(txtContractno.Text.Trim()), Utility.KillSqlInjection(ddltran.SelectedValue), Utility.KillSqlInjection(ddlFee.SelectedValue), Utility.KillSqlInjection(ddlccyid.SelectedValue), Utility.KillSqlInjection(txtcustomername.Text.Trim()),"", "", Utility.KillSqlInjection(ddlFeeType.SelectedValue), gvContractFee.PageSize, gvContractFee.PageIndex * gvContractFee.PageSize, ref IPCERRORCODE, ref IPCERRORDESC);
+            dsContractFee = new SmartPortal.SEMS.Fee().SearchContractFee(Utility.KillSqlInjection(txtContractno.Text.Trim()), Utility.KillSqlInjection(ddlFee.SelectedValue), Utility.KillSqlInjection(ddlccyid.SelectedValue), Utility.KillSqlInjection(txtcustomername.Text.Trim()),"", "", Utility.KillSqlInjection(ddlFeeType.SelectedValue), gvContractFee.PageSize, gvContractFee.PageIndex * gvContractFee.PageSize, ref IPCERRORCODE, ref IPCERRORDESC);
 
             if (IPCERRORCODE == "0")
             {

@@ -2631,6 +2631,46 @@ namespace SmartPortal.SEMS
 
         #endregion
 
+        #region Xem log giao dịch full
+        public DataSet ViewAuthLog(string user,string type, string from, string to, int recPerPage, int recIndex, ref string errorCode, ref string errorDesc) {
+            
+            try
+            {
+                Hashtable hasInput = new Hashtable();
+                Hashtable hasOutput = new Hashtable();
+                hasInput.Add(SmartPortal.Constant.IPC.IPCTRANCODE, "SEMSVIEWAUZHIS");
+                hasInput.Add(SmartPortal.Constant.IPC.SOURCEID, SmartPortal.Constant.IPC.SOURCEIDVALUE);
+                hasInput.Add(SmartPortal.Constant.IPC.USER, user);
+                hasInput.Add(SmartPortal.Constant.IPC.TYPE, type);
+                hasInput.Add(SmartPortal.Constant.IPC.FROM, from);
+                hasInput.Add(SmartPortal.Constant.IPC.TO, to);
+                hasInput.Add("RECPERPAGE", recPerPage);
+                hasInput.Add("RECINDEX", recIndex);
+                hasInput.Add(SmartPortal.Constant.IPC.REVERSAL, "N");
+                hasOutput = SmartPortal.RemotingServices.AT.DBTRAN().ProcessTransHAS(hasInput);
+
+                DataSet ds = new DataSet();
+
+                if (hasOutput[SmartPortal.Constant.IPC.IPCERRORCODE].ToString() == "0")
+                {
+                    ds = (DataSet)hasOutput[SmartPortal.Constant.IPC.DATASET];
+                    errorCode = "0";
+                }
+                else
+                {
+                    errorCode = hasOutput[SmartPortal.Constant.IPC.IPCERRORCODE].ToString();
+                    errorDesc = hasOutput[SmartPortal.Constant.IPC.IPCERRORDESC].ToString();
+                }
+
+                return ds;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
         //khanhhd
         #region Xem log giao dịch full
         public DataSet ViewLogTran(string tranID, string tranCode, string from, string to, string status, string account, string apprsts, string custcodecore, string custname, string contractno, string checkno, string creditAcct, string userApproved, string licenseid, string isschedule, int recPerPage, int recIndex, ref string errorCode, ref string errorDesc)

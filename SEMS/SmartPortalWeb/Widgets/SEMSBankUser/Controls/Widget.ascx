@@ -419,6 +419,7 @@
                                             <div class="col-sm-4 col-xs-12 custom-control">
                                                 <asp:HiddenField runat="server" ID="hdRole" Value='<%# DataBinder.Eval(Container.DataItem, "RoleID") %>' />
                                                 <asp:CheckBox runat="server" ID="cbRole" Text='<%# DataBinder.Eval(Container.DataItem, "RoleName") %>' Checked='<%# DataBinder.Eval(Container.DataItem, "Checked").ToString().Equals("1") %>' />
+                                                <asp:CheckBox Visible="false" runat="server" ID="cbRoleTemp" Text='<%# DataBinder.Eval(Container.DataItem, "RoleName") %>' Checked='<%# DataBinder.Eval(Container.DataItem, "Checked").ToString().Equals("1") %>' />
                                             </div>
                                         </ItemTemplate>
                                     </asp:Repeater>

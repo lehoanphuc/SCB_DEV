@@ -627,50 +627,50 @@ public partial class Widgets_SEMSContractReview_RegisterContract : System.Web.UI
                             goto ERROR;
                         }
 
-                        DataTable accountMBTableNUY = accountMBDatasetNUY.Tables[0];
-                        if (accountMBTableNUY.Rows.Count != 0)
-                        {
-                            if (accountMBTableNUY.Rows[0]["ROLEID"].ToString().Trim() != "")
-                            {
-                                stNUY.Append("<tr>");
-                                stNUY.Append("<td colspan='4'>");
-                                stNUY.Append("<br/>");
-                                stNUY.Append("</td>");
-                                stNUY.Append("</tr>");
+                        //DataTable accountMBTableNUY = accountMBDatasetNUY.Tables[0];
+                        //if (accountMBTableNUY.Rows.Count != 0)
+                        //{
+                        //    if (accountMBTableNUY.Rows[0]["ROLEID"].ToString().Trim() != "")
+                        //    {
+                        //        stNUY.Append("<tr>");
+                        //        stNUY.Append("<td colspan='4'>");
+                        //        stNUY.Append("<br/>");
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("</tr>");
 
-                                stNUY.Append("<tr>");
-                                stNUY.Append("<td colspan='4'>");
-                                stNUY.Append("<B>" + Resources.labels.mobilebanking + "</B>");
-                                stNUY.Append("</td>");
-                                stNUY.Append("</tr>");
+                        //        stNUY.Append("<tr>");
+                        //        stNUY.Append("<td colspan='4'>");
+                        //        stNUY.Append("<B>" + Resources.labels.mobilebanking + "</B>");
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("</tr>");
 
-                                stNUY.Append("<tr>");
-                                stNUY.Append("<td width='25%'>");
-                                stNUY.Append(Resources.labels.username);
-                                stNUY.Append("</td>");
-                                stNUY.Append("<td width='25%'>");
-                                stNUY.Append(accountMBTableNUY.Rows[0]["USERNAME"].ToString());
-                                stNUY.Append("</td>");
-                                stNUY.Append("<td width='25%'>");
-                                stNUY.Append(Resources.labels.password);
-                                stNUY.Append("</td>");
-                                stNUY.Append("<td width='25%'>");
-                                stNUY.Append("########");
-                                //st.Append("<b>" + SmartPortal.Security.Encryption.Decrypt(accountMBTable.Rows[0]["PASS"].ToString()) + "</b>");
-                                stNUY.Append("</td>");
-                                stNUY.Append("</tr>");
+                        //        stNUY.Append("<tr>");
+                        //        stNUY.Append("<td width='25%'>");
+                        //        stNUY.Append(Resources.labels.username);
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("<td width='25%'>");
+                        //        stNUY.Append(accountMBTableNUY.Rows[0]["USERNAME"].ToString());
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("<td width='25%'>");
+                        //        stNUY.Append(Resources.labels.password);
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("<td width='25%'>");
+                        //        stNUY.Append("########");
+                        //        //st.Append("<b>" + SmartPortal.Security.Encryption.Decrypt(accountMBTable.Rows[0]["PASS"].ToString()) + "</b>");
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("</tr>");
 
-                                stNUY.Append("<tr>");
-                                stNUY.Append(Resources.labels.phone + " :");
-                                stNUY.Append("</td>");
-                                stNUY.Append("<td width='25%'>");
-                                stNUY.Append(accountMBTableNUY.Rows[0]["UN"].ToString());
-                                stNUY.Append("</td>");
-                                stNUY.Append("</tr>");
+                        //        stNUY.Append("<tr>");
+                        //        stNUY.Append(Resources.labels.phone + " :");
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("<td width='25%'>");
+                        //        stNUY.Append(accountMBTableNUY.Rows[0]["UN"].ToString());
+                        //        stNUY.Append("</td>");
+                        //        stNUY.Append("</tr>");
 
 
-                            }
-                        }
+                        //    }
+                        //}
                         //lay het các tai khoan WL cua user theo userID
                         DataSet accountWLDatasetNUY = new SmartPortal.SEMS.User().GetUserRoleByServiceID(SmartPortal.Constant.IPC.EW, row["USERID"].ToString().Trim(), string.Empty, ref IPCERRORCODE, ref IPCERRORDESC);
 
@@ -1066,39 +1066,39 @@ public partial class Widgets_SEMSContractReview_RegisterContract : System.Web.UI
                     goto ERROR;
                 }
 
-                DataTable accountMBTableNQT = accountMBDatasetNQT.Tables[0];
-                if (accountMBTableNQT.Rows.Count != 0)
-                {
+                //DataTable accountMBTableNQT = accountMBDatasetNQT.Tables[0];
+                //if (accountMBTableNQT.Rows.Count != 0)
+                //{
 
-                        stNQT.Append("<tr>");
-                        stNQT.Append("<td colspan='4'>");
-                        stNQT.Append("<br/>");
-                        stNQT.Append("</td>");
-                        stNQT.Append("</tr>");
+                //        stNQT.Append("<tr>");
+                //        stNQT.Append("<td colspan='4'>");
+                //        stNQT.Append("<br/>");
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("</tr>");
 
-                        stNQT.Append("<tr>");
-                        stNQT.Append("<td colspan='4'>");
-                        stNQT.Append("<B>Mobile Banking</B>");
-                        stNQT.Append("</td>");
-                        stNQT.Append("</tr>");
+                //        stNQT.Append("<tr>");
+                //        stNQT.Append("<td colspan='4'>");
+                //        stNQT.Append("<B>Mobile Banking</B>");
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("</tr>");
 
-                        stNQT.Append("<tr>");
-                        stNQT.Append("<td width='25%'>");
-                        stNQT.Append(Resources.labels.tendangnhap + " :");
-                        stNQT.Append("</td>");
-                        stNQT.Append("<td width='25%'>");
-                        stNQT.Append(accountMBTableNQT.Rows[0]["UN"].ToString());
-                        stNQT.Append("</td>");
-                        stNQT.Append("<td width='25%'>");
-                        stNQT.Append(Resources.labels.matkhau + " :");
-                        stNQT.Append("</td>");
-                        stNQT.Append("<td width='25%'>");
-                        stNQT.Append("########");
-                        //st.Append("<b>" + SmartPortal.Security.Encryption.Decrypt(accountMBTable.Rows[0]["PASS"].ToString()) + "</b>");
-                        stNQT.Append("</td>");
-                        stNQT.Append("</tr>");
+                //        stNQT.Append("<tr>");
+                //        stNQT.Append("<td width='25%'>");
+                //        stNQT.Append(Resources.labels.tendangnhap + " :");
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("<td width='25%'>");
+                //        stNQT.Append(accountMBTableNQT.Rows[0]["UN"].ToString());
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("<td width='25%'>");
+                //        stNQT.Append(Resources.labels.matkhau + " :");
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("<td width='25%'>");
+                //        stNQT.Append("########");
+                //        //st.Append("<b>" + SmartPortal.Security.Encryption.Decrypt(accountMBTable.Rows[0]["PASS"].ToString()) + "</b>");
+                //        stNQT.Append("</td>");
+                //        stNQT.Append("</tr>");
 
-                }
+                //}
             }
             tmpl.SetAttribute("USERINFO", stNQT.ToString());
 

@@ -309,7 +309,51 @@ namespace SmartPortal.IB
 
         #endregion
 
+        public DataTable UpdateInterest(string ipctransid, string ltt, string ldh, string desc)
+        {
 
+            DataTable iRead;
+
+            SqlParameter p1 = new SqlParameter();
+            p1.ParameterName = "@ipctransid";
+            p1.Value = ipctransid;
+            p1.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p2 = new SqlParameter();
+            p2.ParameterName = "@ltt";
+            p2.Value = ltt;
+            p2.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p3 = new SqlParameter();
+            p3.ParameterName = "@ldh";
+            p3.Value = ldh;
+            p3.SqlDbType = SqlDbType.VarChar;
+
+            SqlParameter p4 = new SqlParameter();
+            p4.ParameterName = "@desc";
+            p4.Value = desc + "|" + DateTime.Now.ToString();
+            p4.SqlDbType = SqlDbType.NVarChar;
+
+
+            iRead = DataAccess.GetFromDataTable("eba_updateinterestTT", p1, p2, p3, p4);
+
+
+            return iRead;
+        }
+
+        public DataTable GetListUserApprove(string tranid)
+        {
+
+            DataTable iRead;
+            SqlParameter p1 = new SqlParameter();
+            p1.ParameterName = "@TRANID";
+            p1.Value = tranid;
+            p1.SqlDbType = SqlDbType.VarChar;
+
+            iRead = DataAccess.GetFromDataTable("GET_LIST_USER_APPROVE", p1);
+
+            return iRead;
+        }
 
         #region Xem log giao dịch
         public DataSet ViewLogTransaction(string userID, string tranID, string tranCode, string from, string to, string status, string account, string apprsts, bool isdeleted, string isbatch, string batchref, string custcodecore, string custname, string contractno, string checkno, string creditAcct, string userApproved, string licenseid, string custType, string isschedule, ref string errorCode, ref string errorDesc)

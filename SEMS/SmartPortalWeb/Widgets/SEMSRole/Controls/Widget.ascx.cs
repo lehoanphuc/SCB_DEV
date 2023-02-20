@@ -36,6 +36,15 @@ public partial class Widgets_Group_Controls_Widget : WidgetBase
             ViewState["TABLEACTION"] = value;
         }
     }
+
+    private DataTable ORIGINPERMISSON
+    {
+        get { return ViewState["ORIGINPERMISSON"] as DataTable; }
+        set
+        {
+            ViewState["ORIGINPERMISSON"] = value;
+        }
+    }
     protected void Page_Load(object sender, EventArgs e)
     {
         try
@@ -50,7 +59,8 @@ public partial class Widgets_Group_Controls_Widget : WidgetBase
             }
             else
             {
-                string value = !string.IsNullOrEmpty(hdID.Value) ? hdID.Value : "0";
+                string id= SmartPortal.Common.Encrypt.GetURLParam(System.Web.HttpContext.Current.Request.RawUrl)["ID"].ToString();
+                string value = !string.IsNullOrEmpty(hdID.Value) ? hdID.Value : (string.IsNullOrEmpty(id)?"0":id); 
                 LoadSourcePermission(Utility.IsInt(value));
             }
         }
@@ -292,6 +302,7 @@ public partial class Widgets_Group_Controls_Widget : WidgetBase
     private void LoadSourcePermission(int groupid)
     {
         DataTable dt = new MenuBLL().LoadForPermission(groupid, System.Globalization.CultureInfo.CurrentCulture.ToString(), ddlServiceID.SelectedValue);
+        ORIGINPERMISSON = dt;
         if (ddlServiceID.SelectedValue.Equals(IPC.SEMS))
         {
             gvSource.DataSource = dt;
@@ -502,6 +513,7 @@ public partial class Widgets_Group_Controls_Widget : WidgetBase
             {
                 foreach (GridViewRow row in gvSource.Rows)
                 {
+
                     var hdPage = row.Cells[0].FindControl("hdPageID") as HiddenField;
                     var hdMenu = row.Cells[0].FindControl("hdMenuID") as HiddenField;
                     string pageid = hdPage.Value;
@@ -512,12 +524,32 @@ public partial class Widgets_Group_Controls_Widget : WidgetBase
                         foreach (DataRow page in dtPageRef.Rows)
                         {
                             var check = row.FindControl("cb" + page["Action"].ToString()) as CheckBox;
+                            DataRow[] temp1 = ORIGINPERMISSON.Select("PageID='" + pageid + "'");
+                            string statusAction = temp1[0][page["Action"].ToString()].ToString();
                             if (check != null)
-                            {
-                                prBLL.Insert(roleid, page["PageID"].ToString(), check.Checked);
-                                SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["PAGE"], System.Configuration.ConfigurationManager.AppSettings["PERMISSION"], Request.Url.ToString(), Session["userName"].ToString(), Request.UserHostAddress, System.Configuration.ConfigurationManager.AppSettings["TBLPAGERIGHT"], System.Configuration.ConfigurationManager.AppSettings["PAGEID"], "", page["PageID"].ToString());
-                                SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["PAGE"], System.Configuration.ConfigurationManager.AppSettings["PERMISSION"], Request.Url.ToString(), Session["userName"].ToString(), Request.UserHostAddress, System.Configuration.ConfigurationManager.AppSettings["TBLPAGERIGHT"], System.Configuration.ConfigurationManager.AppSettings["ROLEID"], "", roleid.ToString());
-                            }
+                                if ((check.Checked && (string.IsNullOrEmpty(statusAction) || statusAction.Equals("0")))||(!check.Checked && statusAction.Equals("1")))
+                                {
+                                    prBLL.Insert(roleid, page["PageID"].ToString(), check.Checked);
+                                    SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["GROUPINROLE"],
+                                        System.Configuration.ConfigurationManager.AppSettings["PERMISSION"],
+                                        Request.Url.ToString(),
+                                        Session["userName"].ToString(),
+                                        Request.UserHostAddress,
+                                        System.Configuration.ConfigurationManager.AppSettings["TBLPAGERIGHT"],
+                                        System.Configuration.ConfigurationManager.AppSettings["PAGEID"],
+                                        (check.Checked ? IPC.NEW : IPC.DELETE)+"|"+ txtGroupName.Text+"|"+ page["Action"].ToString(),
+                                        temp1[0]["MenuTitle"].ToString());
+                                    SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["PAGE"],
+                                        System.Configuration.ConfigurationManager.AppSettings["PERMISSION"],
+                                        Request.Url.ToString(),
+                                        Session["userName"].ToString(),
+                                        Request.UserHostAddress,
+                                        System.Configuration.ConfigurationManager.AppSettings["TBLPAGERIGHT"],
+                                        System.Configuration.ConfigurationManager.AppSettings["PAGEID"],
+                                        "",
+                                        page["PageID"].ToString());
+                                    SmartPortal.Common.Log.WriteLogDatabase(System.Configuration.ConfigurationManager.AppSettings["PAGE"], System.Configuration.ConfigurationManager.AppSettings["PERMISSION"], Request.Url.ToString(), Session["userName"].ToString(), Request.UserHostAddress, System.Configuration.ConfigurationManager.AppSettings["TBLPAGERIGHT"], System.Configuration.ConfigurationManager.AppSettings["ROLEID"], "", roleid.ToString());
+                                }
                         }
                     }
                     var checkMenu = row.FindControl("cb" + IPC.ACTIONPAGE.LIST) as CheckBox;

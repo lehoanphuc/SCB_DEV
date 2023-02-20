@@ -29,12 +29,12 @@ public partial class Widgets_SEMSSwiftCreate_Widget : WidgetBase
     {
         lblError.Text = "";
 
-            if (!IsPostBack)
+            if (IsPostBack)
             {
                 #region Load thông tin ngân hàng
                 ddlBank.DataSource = new SmartPortal.SEMS.Bank().Load();
-                ddlBank.DataTextField = "BANKNAME";
-                ddlBank.DataValueField = "BANKCODE";
+                ddlBank.DataTextField = "BankName";
+                ddlBank.DataValueField = "BankCode";
                 ddlBank.DataBind();
                 #endregion
                 BindData();

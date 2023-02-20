@@ -1609,8 +1609,7 @@ namespace SmartPortal.SEMS
             }
         }
         #endregion
-
-        public DataTable UpdateInterest(string ipctransid,string ltt,string ldh,string desc)
+        public DataTable UpdateInterest(string ipctransid, string ltt, string ldh, string desc)
         {
 
             DataTable iRead;
@@ -1632,11 +1631,11 @@ namespace SmartPortal.SEMS
 
             SqlParameter p4 = new SqlParameter();
             p4.ParameterName = "@desc";
-            p4.Value = desc+"|"+DateTime.Now.ToString();
+            p4.Value = desc + "|" + DateTime.Now.ToString();
             p4.SqlDbType = SqlDbType.NVarChar;
 
 
-            iRead = DataAccess.GetFromDataTable("eba_updateinterestTT", p1, p2, p3,p4);
+            iRead = DataAccess.GetFromDataTable("eba_updateinterestTT", p1, p2, p3, p4);
 
 
             return iRead;

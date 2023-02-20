@@ -593,6 +593,22 @@ public partial class Widgets_IBViewLogTransactions_ViewDetails_Widget : WidgetBa
                         btnNo.Visible = false;
                         pnConfirm.Visible = false;
                         btnBack.Visible = true;
+
+                        DataTable dt2 = new DataTable();
+                        dt2 = new SmartPortal.IB.Transactions().GetListUserApprove(tranID);
+                        List<string> emails = new List<string>();
+                        foreach (DataRow dr2 in dt2.Rows) {
+                            emails.Add(dr2["Email"].ToString());
+                        }
+                        Antlr3.ST.StringTemplate tmpl = new Antlr3.ST.StringTemplate();
+                        tmpl = SmartPortal.Common.ST.GetEmailTemplate("NotifyCancel" + System.Globalization.CultureInfo.CurrentCulture.Name);
+                        tmpl.SetAttribute("tranID", tranID);
+                        tmpl.SetAttribute("date", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+
+                        foreach (String email in emails) {
+                            SmartPortal.Common.EmailHelper.SendMailMessageAsync(ConfigurationManager.AppSettings["contractapprovemailfrom"], email, ConfigurationManager.AppSettings["contractapprovemailtitle"], tmpl.ToString());
+                        }
+
                         return;
                     }
                     else
