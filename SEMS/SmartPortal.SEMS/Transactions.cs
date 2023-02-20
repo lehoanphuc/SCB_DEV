@@ -350,7 +350,7 @@ namespace SmartPortal.SEMS
         #endregion
 
         #region CHECK EXIST TRANSACTION TYPE
-        public DataTable CheckExistTrancode(string userid, string trancode, string ccyid)
+        public DataTable CheckExistTrancode(string userid, string trancode, string ccyid, string type)
         {
             DataTable iRead;
 
@@ -371,7 +371,7 @@ namespace SmartPortal.SEMS
 
             SqlParameter p4 = new SqlParameter();
             p4.ParameterName = "@TYPE";
-            p4.Value = "SEMS";
+            p4.Value = type;
             p4.SqlDbType = SqlDbType.VarChar;
 
             iRead = DataAccess.GetFromDataTable("CHECKEXISTTRANCODE", p1, p2, p3, p4);

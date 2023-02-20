@@ -13,6 +13,14 @@
         </div>
         <div id="divError">
             <asp:Label ID="lblError" runat="server" Text=""></asp:Label>
+            <div style="text-align: center; margin-top: 10px;">
+                <asp:Button Visible="false" ID="btnOverwrite" CssClass="btn btn-primary" runat="server" Text="Overwrite Transaction"
+                    OnClick="btnOverwrite_Click" />
+                <asp:Button Visible="false" ID="btnAddMissTrans" runat="server" CssClass="btn btn-primary" Text="Add miss Transaction"
+                    OnClientClick="return validate();" OnClick="btnAddMissTrans_Click" />
+                <asp:Button Visible="false" ID="btnCancel" runat="server" CssClass="btn btn-warning" Text="Cancel"
+                    OnClick="btnCancel_Click" />
+            </div>
         </div>
 
         <asp:Panel ID="pnSeachContract" runat="server" DefaultButton="btnSearch">
